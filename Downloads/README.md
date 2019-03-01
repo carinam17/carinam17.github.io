@@ -1,8 +1,8 @@
-### A List of downloadable resources as PDFs
+## Learning Resources 
 
 
 
-#### Mathematics
+### Mathematics
 
 Factoring Review
 
@@ -10,22 +10,27 @@ Factoring Review
 #### Spanish
 
 
+        carinam17.github.io/Downloads/Port_Number_Flashcards.pdf
+      
 <dl>
-  <dt> [Indicative Overview]({{ carinam17.github.io }}/Downloads/Present Indicative Guide Part 1.pdf)</dt>
+  <dt> [Indicative Overview](carinam17.github.io/Downloads/Port_Number_Flashcards.pdf)</dt>
   <dt> Gender </dt>
   <dt> Accents </dt>
 </dl>
-#### Content Writing
+
+
+### Content Writing
 
 Brand Voice Booklet
 
+How to Edit for Length
 
 
 #### IT 
 
 Port Number Cards
 
-Use flash card exercises to memorize protocols and their port numbers. Download and print them <a href="carinam17.github.io/Downloads/Port_Number_Flashcards.pdf" target="_blank">here.</a>
+Use flash card exercises to memorize protocols and their port numbers. Download and print them <a href="carinam17.github.io/Downloads/Port_Number_Flashcards.pdf" target="_blank" > here.</a>
 
 
 Binary Practice
