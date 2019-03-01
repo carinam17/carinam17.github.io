@@ -5,10 +5,10 @@ title: About
 
 <p class="message">
 
-My name is Carina Mata, and I am educator, content writer, and IT professional.  
+My name is Carina Mata, and I am educator and content writer who is transitioning to a career in IT. 
+
 
 </p>
-
 
 
 
@@ -21,6 +21,9 @@ There are currently two themes built on Poole:
 
 Learn more and contribute on [GitHub](https://github.com/poole).
 
+
+
+
 ## Skills
 
 Through my teaching: 
@@ -32,9 +35,7 @@ My skillset includes the following:
 * Teaching
 * 
 
-
 I have worked with the following software and programming languages:
-
 
 * LaTeX
 * R
