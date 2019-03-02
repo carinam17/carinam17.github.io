@@ -1,23 +1,12 @@
-## Learning Resources 
 
+Here are resources for various topics in mathematics, IT, and writing. I hope they are helpful in your studies. Reach out to me if you have questions, comments, or suggestions about these materials. 
 
 
 ### Mathematics
 
-Factoring Review
 
 
 #### Spanish
-
-
-        carinam17.github.io/Downloads/Port_Number_Flashcards.pdf
-      
-<dl>
-  <dt> [Indicative Overview](carinam17.github.io/Downloads/Port_Number_Flashcards.pdf)</dt>
-  <dt> Gender </dt>
-  <dt> Accents </dt>
-</dl>
-
 
 
 
@@ -25,20 +14,16 @@ Factoring Review
 
 Brand Voice Booklet
 
-you can download the [brand voice]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf) directly.
-
-
 How to Edit for Length
 
 
-#### IT 
+### IT 
 
-Port Number Cards
+#### Port Number Cards
 
-Use flash card exercises to memorize protocols and their port numbers. Download and print them <a href="carinam17.github.io/Downloads/Port_Number_Flashcards.pdf" target="_blank" > here.</a>
+Use flash card exercises to memorize protocols and their port numbers. Download and print them [here]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf).
 
+#### Binary Practice
 
-Binary Practice
-
-
+Binary numbers are used extensively in IT. Use this two part guide to understand the concept of binary numbers: [Part 1]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_1.pdf).
 
