@@ -19,9 +19,14 @@ Factoring Review
 </dl>
 
 
+
+
 ### Content Writing
 
 Brand Voice Booklet
+
+you can download the [brand voice]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf) directly.
+
 
 How to Edit for Length
 
