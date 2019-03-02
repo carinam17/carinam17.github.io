@@ -5,8 +5,12 @@ Here are resources for various topics in mathematics, IT, and writing. I hope th
 ### Mathematics
 
 
+### Spanish
 
-#### Spanish
+
+#### Present Indicative Guide 
+
+The present indicative is the first tense learned by students of Spanish. Use this three part guide to understand how to form and use the present indicative: [Part 1]({{ carinam17.github.io }}/Downloads/Present Indicative Guide Part 1.pdf).
 
 
 
