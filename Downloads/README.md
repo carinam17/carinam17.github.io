@@ -10,22 +10,25 @@ Here are resources for various topics in mathematics, IT, and writing. I hope th
 
 #### Present Indicative Guide 
 
-The present indicative is the first tense learned by students of Spanish. Use this three part guide to understand how to form and use the present indicative: [Part 1]({{ carinam17.github.io }}/Downloads/Present Indicative Guide Part 1.pdf).
+The present indicative is the first tense learned by students of Spanish. Use this three part guide to understand how to form and use the present indicative: [Part 1]({{ carinam17.github.io }}/Downloads/Present Indicative Guide Part 1.pdf)
 
 
 
 ### Content Writing
 
-Brand Voice Booklet
+#### Brand Voice Booklet
 
-How to Edit for Length
+Writing copy for a website or marketing material can seem like a daunting task. This guide is the framework I use to brainstorm and write copy for clients. Download it [here.]({{ carinam17.github.io }}/Downloads/Developing_a_Brand_Voice.pdf)
+ 
+
+#### How to Edit for Length
 
 
 ### IT 
 
 #### Port Number Cards
 
-Use flash card exercises to memorize protocols and their port numbers. Download and print them [here]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf).
+Use flash card exercises to memorize protocols and their port numbers. Download and print them [here.]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf).
 
 #### Binary Practice
 
