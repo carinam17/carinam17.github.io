@@ -22,7 +22,7 @@ Learn more and contribute on [GitHub](https://github.com/poole).
 
 ### Mathematics 
 
-My strong knowledge of mathematics and teaching skills have allowed me to provide skillful instruction in both classroom and private settings. This work is meaningful to me and allows me to positively impact students in their educational journey. 
+My strong knowledge of mathematics and teaching skills have allowed me to provide skillful instruction in both classroom and private settings. Through this work, I have been able to positively impact many students in their educational journey. 
 
 Go to the mathematics section for a variety of learning resources. 
 
@@ -36,22 +36,22 @@ Head to the writing section for sample work.
 ### Information Technology
 
 
-I completed the Rackspace Open Cloud Academy's cyber security course in December 2018 and earned two security certifications, CompTIA Security + (include link) and the (ICS)^2 CISSP (include link). I have also used a variety of programming languages and software.
+I completed the Rackspace Open Cloud Academy's cyber security course in December 2018 and earned two security certifications, [CompTIA Security +](https://certification.comptia.org/certifications/security) and the [Associate of(ICS)<sup>2</sup>](https://www.isc2.org/Certifications/Associate). I am comfortable with several programming languages and operating systems.
 
 
-Go to the IT section for study material for CompTIA Security+ and CCNA certification exams. 
-## 
+Go to the IT section to find study materials for the CompTIA Security+ and CCNA certification exams. 
 
 
+## Skills and Experience
 
-## Technical Skills
 
-<!---
-My skillset includes the following:
+I have experience with the following:
 * Writing
 * Teaching
 * Curriculum development
---->
+* Public speaking
+
+
 
 I have worked with the following software, programming languages, and operating systems:
 
