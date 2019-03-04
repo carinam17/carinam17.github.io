@@ -36,7 +36,7 @@ Head to the writing section for sample work.
 ### Information Technology
 
 
-I completed the Rackspace Open Cloud Academy's cyber security course in December 2018 and earned two security certifications, [CompTIA Security +](https://certification.comptia.org/certifications/security) and the [Associate of(ICS)<sup>2</sup>](https://www.isc2.org/Certifications/Associate). I am comfortable with several programming languages and operating systems.
+I completed the Rackspace Open Cloud Academy's cyber security course in December 2018 and earned two security certifications, [CompTIA Security +](https://certification.comptia.org/certifications/security) and the [Associate of (ICS)<sup>2</sup>](https://www.isc2.org/Certifications/Associate). I am comfortable with several programming languages and operating systems.
 
 
 Go to the IT section to find study materials for the CompTIA Security+ and CCNA certification exams. 
