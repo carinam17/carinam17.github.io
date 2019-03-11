@@ -13,11 +13,8 @@
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Home</a>
 
     
-     <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Math</a> 
-    
-    
-    
+<!---     <nav class="sidebar-nav"> --->
+   
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
       `layout: page` in the front-matter. See readme for usage.
@@ -38,6 +35,10 @@
         <a class="sidebar-nav-item" href="{{ site.github.repo }}/Downloads">Writing</a>
        
     <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Services</a>
+       
+           <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">Math</a> 
+    
+   
        
     <a class="sidebar-nav-item" href="{{ site.github.repo }}/Downloads">Resource Area</a>
   
