@@ -26,14 +26,17 @@ Flash cards can be used effectively to retain vocabulary. The following sets are
 Writing copy for a website or marketing material can seem like a daunting task. This guide is the framework I use to brainstorm and write copy for clients. Download it [here.]({{ carinam17.github.io }}/Downloads/Developing_a_Brand_Voice.pdf)
  
 
- <!--- #### How to Edit for Length
+ <!--- #### How to Edit for Length --->
 
 
 ### IT 
 
-#### Port Number Cards
+#### Flash Card Sets
 
-Use flash card exercises to memorize protocols and their port numbers. Download and print them [here.]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf).
+[Protocol Port Numbers]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf).
+
+[Malware]({{ carinam17.github.io }}/Downloads/Malware_Flash_Cards.pdf)
+
 
 #### Binary Practice
 
