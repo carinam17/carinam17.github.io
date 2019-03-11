@@ -22,6 +22,9 @@ Flash cards can be used effectively to retain vocabulary. The following sets are
 
 [Colors]({{ carinam17.github.io }}/Downloads/Colors.pdf)
 
+#### Verb Lists
+
+[Set 1]({{ carinam17.github.io }}/Downloads/12_Common_Verbs_Part_1.pdf)
 
 ### Content Writing
 
