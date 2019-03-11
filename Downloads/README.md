@@ -18,6 +18,9 @@ Flash cards can be used effectively to retain vocabulary. The following sets are
 
 [Pronouns]({{ carinam17.github.io }}/Downloads/Pronouns_Flash_Cards.pdf)
 
+[Days of the Week]({{ carinam17.github.io }}/Downloads/Days_of_the_Week_Flashcards.pdf)
+
+
 
 ### Content Writing
 
@@ -37,7 +40,9 @@ Writing copy for a website or marketing material can seem like a daunting task. 
 
 #### Binary Practice
 
-Binary numbers are used extensively in IT. Use this two part guide to understand the concept of binary numbers: [Part 1]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_1.pdf) and [Part 2]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_2.pdf)
+Binary numbers are used extensively in IT. Use this two part guide to understand binary numbers:
+
+[Part 1]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_1.pdf) and [Part 2]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_2.pdf)
 
 
 
