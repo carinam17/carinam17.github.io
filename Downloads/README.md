@@ -37,5 +37,7 @@ Use flash card exercises to memorize protocols and their port numbers. Download 
 
 #### Binary Practice
 
-Binary numbers are used extensively in IT. Use this two part guide to understand the concept of binary numbers: [Part 1]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_1.pdf).
+Binary numbers are used extensively in IT. Use this two part guide to understand the concept of binary numbers: [Part 1]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_1.pdf) and [Part 2]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_2.pdf).
+
+
 
