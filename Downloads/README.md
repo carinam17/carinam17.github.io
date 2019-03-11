@@ -12,6 +12,11 @@ Here are resources for various topics in mathematics, IT, and writing. I hope th
 
 The present indicative is the first tense learned by students of Spanish. Use this three part guide to understand how to form and use the present indicative: [Part 1]({{ carinam17.github.io }}/Downloads/Present Indicative Guide Part 1.pdf)
 
+#### Flash Card Sets
+
+Flash cards can be used effectively to retain vocabulary. The following sets are useful for Spanish learners. 
+
+[Pronouns]({{ carinam17.github.io }}/Downloads/Pronouns_Flash_Cards.pdf)
 
 
 ### Content Writing
@@ -21,7 +26,7 @@ The present indicative is the first tense learned by students of Spanish. Use th
 Writing copy for a website or marketing material can seem like a daunting task. This guide is the framework I use to brainstorm and write copy for clients. Download it [here.]({{ carinam17.github.io }}/Downloads/Developing_a_Brand_Voice.pdf)
  
 
-#### How to Edit for Length
+ <!--- #### How to Edit for Length
 
 
 ### IT 
