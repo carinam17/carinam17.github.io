@@ -1,36 +1,13 @@
-###Information Technology
+### Information Technology
 
+#### Certifications
 
-(although we should probably maintain those too).
+Earning exam based certifications can be a good way to signal a level of knowledge to a potential employer. Below are a variety of resources for understanding certain topics in information technology.
 
-
-
-
-Never before have we 
-
-
-In all that connectedness, it's possible for something 
-to get too close:
-
-
-
-
-
--Data breaches
-
-
-### Topics 
+#### Topics 
 
 
 #### Devices
-
-Know what makes up a network:
-
-
-#### A historical view 
-
-
-
 
 
 
