@@ -58,7 +58,7 @@ Visit my **[IT section]** to find study materials for the CompTIA Security+ and 
 * * * 
 
 
-###Creative Pursuits
+### Creative Pursuits
 
 My desire to produce thoughtful works extends beyond curricula to include fiction writing and musical performance. I've written, revised, edited, and workshopped short stories, poetry, novels, and plays. I am also an avid guitarist who plays in many styles on both acoustic and electric guitars.   
 
@@ -71,7 +71,7 @@ These hobbies invite me to be reflective and diligently work at improving my cra
 
 
 
-###Contact Me
+### Contact Me
 
 
 As much as I enjoy teaching, I know that learning is just as important. With all the diversity of people and ideas, collaboration is critical to any meaningful advancement in knowledge, skill, and experience. If you think I may be able to help you in some way, let me know. I especially welcome the input of students and fellow educators. 
