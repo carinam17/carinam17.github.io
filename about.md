@@ -1,14 +1,13 @@
 ---
 layout: page
-title: About
+title: About Carina
 ---
 
 
-### Carina Mata | Education, Writing, and Mathematics
+<~ --- ### Carina Mata | Education, Writing, and Mathematics --->
 
 
-I am a San Antonio native with a passion for education, mathematics, and all forms of communication. For years, I have applied this knowledge and skill set to helping others meet their educational and professional goals. As a freelancer, I tutor mathematics from grades K-12 and at the undergraduate level. Additionally, I am a content developer who has written on multiple topics across a variety of genres and for diverse audiences.  
-
+I am a San Antonio based writer and educator with a passion for teaching, mathematics, and all forms of communication. For years, I have applied my knowledge and skill set to helping others meet their educational and professional goals. As a freelancer, I tutor mathematics from grades K-12 and at the undergraduate level. Additionally, I am a content developer who has written on multiple topics across a variety of genres and for diverse audiences.  
 
 
 * * * 
@@ -31,21 +30,19 @@ Preview the material at this **[site]**.
 
 ### Writing 
 
-From editing a peer's essays to writing copy for websites and education materials, I welcome any opportunity to develop my writing skills and use them in a variety of capacities.
+From editing a essays to writing copy for websites and educational materials, I welcome any opportunity to develop my writing skills and use them in a variety of capacities.
 
 
-I have written short stories and poetry as well as website content and learning resources. My guidance in writing résumés and cover letters has helped others better represent their skills and background in order to gain admission to undergraduate and graduate schools as well as obtain jobs. 
+I have written short stories and poetry as well as promotional content and learning resources. My guidance in writing résumés and cover letters has helped others better represent their skills and background in order to gain admission to undergraduate and graduate schools as well as obtain jobs. 
 
-Head to the writing section for **[samples]** of my work.
-
-
+Head to the **[writing section]** for samples of my work.
 
 * * * 
 
 ### Information Technology
 
 
-I completed the Rackspace Open Cloud Academy's cyber security course in December 2018 and earned two security certifications, [CompTIA Security +](https://certification.comptia.org/certifications/security) and the [Associate of (ICS)<sup>2</sup>](https://www.isc2.org/Certifications/Associate). I am comfortable with several programming languages and operating systems.
+I completed the Rackspace Open Cloud Academy's cyber security course in December 2018 and earned two security certifications, [CompTIA Security +](https://certification.comptia.org/certifications/security) and the [Associate of (ICS)<sup>2</sup>](https://www.isc2.org/Certifications/Associate). Additionally, I'm comfortable with several programming languages and operating systems.
 
 
 I am not currently seeking a career in cybersecurity, but I continue to use my technical knowledge in the development of tools and methods to teach interdisciplinary STEM. Read more about that work **[here]**.  
@@ -54,13 +51,12 @@ I am not currently seeking a career in cybersecurity, but I continue to use my t
 Visit my **[IT section]** to find study materials for the CompTIA Security+ and CCNA certification exams. 
 
 
-
 * * * 
 
 
 ### Creative Pursuits
 
-My desire to produce thoughtful works extends beyond curricula to include fiction writing and musical performance. I've written, revised, edited, and workshopped short stories, poetry, novels, and plays. I am also an avid guitarist who plays in many styles on both acoustic and electric guitars.   
+My desire to produce thoughtful works extends to fiction writing and musical performance. I've written, revised, edited, and workshopped short stories, poetry, novels, and plays. I am also an avid guitarist who plays in many styles on both acoustic and electric guitars.   
 
 
 These hobbies invite me to be reflective and diligently work at improving my craft. Moreover, music is a universal language and I appreciate the ability to create something from which others can derive joy. 
@@ -69,13 +65,10 @@ These hobbies invite me to be reflective and diligently work at improving my cra
 
 * * * 
 
-
-
 ### Contact Me
 
 
-As much as I enjoy teaching, I know that learning is just as important. With all the diversity of people and ideas, collaboration is critical to any meaningful advancement in knowledge, skill, and experience. If you think I may be able to help you in some way, let me know. I especially welcome the input of students and fellow educators. 
-
+As much as I enjoy teaching, I know that learning is just as important. With all the diversity of people and ideas, collaboration is critical to any meaningful advancement in knowledge, skill, and experience. If you think I may be able to help you in some way, let me know. I especially welcome the input of students and fellow educators in improving and developing my own work. 
 
 
 
