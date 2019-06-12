@@ -4,7 +4,7 @@ title: About Carina
 ---
 
 
-<~ --- ### Carina Mata | Education, Writing, and Mathematics --->
+<!--- ### Carina Mata | Education, Writing, and Mathematics --->
 
 
 I am a San Antonio based writer and educator with a passion for teaching, mathematics, and all forms of communication. For years, I have applied my knowledge and skill set to helping others meet their educational and professional goals. As a freelancer, I tutor mathematics from grades K-12 and at the undergraduate level. Additionally, I am a content developer who has written on multiple topics across a variety of genres and for diverse audiences.  
