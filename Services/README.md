@@ -4,29 +4,27 @@ title: Services
 ---
 
 
-I am proud to offer the following freelance services: Pricing and fees are dependent on the scope and specifications of the project. Reach out to me to see how I can help you. 
+I am proud to offer the following freelance services. Pricing and fees are dependent on the scope and specifications of the project. Reach out to me to see how I can help you. 
 
 * * * 
 
 ### Content Writing 
 
 
-Writing can be a thorn in the side of many businesses
-The right words speak volumes and capture the essence of your brand. And less than optimal words are at best a missed opportunity and at worst can detract from a brand or business. 
+Writing can be a thorn in the side of many businesses.
+The right words speak volumes and capture the essence of your brand. Less than optimal words are at best a missed opportunity and at worst can detract from a brand or business. 
 
 
-Across all platforms, precise messaging draws a customer and makes the case for your business, products, or services. I can provided the following types of content to suit your needs. 
+Across all platforms, precise messaging draws a customer and makes the case for your business, products, or services. I provide the following content types to suit your needs. 
 
  
 
-#### Website content
+#### Website copy
 
-Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can facilitate this goal. This can include biographies, company profiles, product and service descriptions. 
-
+Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can facilitate this goal. This written content (known as copy) can include biographies, company profiles, product and service descriptions. 
 
 
 #### Product names, slogans, and taglines
-
 
 What's in a name? Quite a bit, since it is often the first impression clients and customers will have about your product or service. 
 
@@ -36,28 +34,22 @@ Clarity combined with stylistically interesting and vivid descriptions will posi
 
 #### Blog posts
 
-Position yourself as an authority in your field and your company as a dependable leader in your field. 
-Share this contact on social media to further engage your audience and draw prospects to your business. 
 
-The posts should be interesting and engaging to the reader yet optimized to be suggested by search engines. Blog writing also takes valuable time so considering delegating that task to a writer. 
+Blog posts are opportunities to educate potential customers as well as position yourself as an authority in your field and your company as a dependable leader in your field. Share this content on social media to further engage your audience and draw prospects to your business. 
 
-
-
+These pieces should be interesting and engaging to a human reader yet optimized to be suggested by search engines. Blog writing takes valuable time, so considering delegating that task to a writer if you need blogs as marketing material. 
 
 #### Product and service descriptions
 
-
-Let a descriptive and precise product description show clients and customers exactly what advantage you offer and remove any doubt that you or your business are the best in your class. 
-
+Let a descriptive and precise product description show clients and customers exactly what advantage you offer and remove any doubt that you or your business are the best in your class. This content is especially critical for landing pages and online stores.
 
 
 #### Line Editing and Revision
 
-A second pair of eyes never hurts, but the input of an experienced writer can enhance the impact of your written content. From grammatical errors to improvements in structure and format, 
+A second pair of eyes never hurts. Even better, the input of an experienced writer can enhance the impact of your written content. From grammatical errors to improvements in structure and format, line editing and revision services are a great option for businesses looking to refine and polish their messaging. 
 
 
 * * * 
-
 
 ### Recommendations
 
@@ -65,15 +57,12 @@ There is no better testament to the quality of my services than the experiences 
 
 
 
-
 #### Service: Line editing and revision
-
-
 
 
 > "I had the pleasure to meet Carina at Geekdom, where she was an active member and helped organize the writer's group. She took the leadership for this group and kept us in check and organized, so we could progress on our writing skills.
 
-> Also, on a personal level, she was an important member on the launch of our first comic book Super Chikis. She helped us with the copy editing as English is not my first language. In this project, Carina was very professional, always providing valuable input and correcting errors a previous copy editor had not picked up. -Luz Andrea Diaz
+Also, on a personal level, she was an important member on the launch of our first comic book Super Chikis. She helped us with the copy editing as English is not my first language. In this project, Carina was very professional, always providing valuable input and correcting errors a previous copy editor had not picked up. -Luz Andrea Diaz
 
 
 <!--- In general, Carina is a very motivated and detail oriented team mate, where she will be a valuable asset in any team she joins." --->
@@ -82,10 +71,9 @@ There is no better testament to the quality of my services than the experiences 
 *** 
 ### Private Tutoring
 
-Learning is such a personalized experience that many can find themselves in need of one-on-one support. I have been a trusted guide through the mathematical studies of students from a broad range of backgrounds. I provide high quality, personalized mathematics instruction to fit the needs of students of all kinds. Education opens doors, so work with me to achieve better outcomes in your math courses.
+Learning is such a personalized experience that many find themselves in need of one-on-one support. I have been a trusted guide through the mathematical studies of students from a broad range of backgrounds. I provide high quality, personalized mathematics instruction to fit the needs of students of all kinds.
 
-
-
+Education opens doors, so work with me to achieve better outcomes in your math courses. I offer several options for maximum flexibility.
 
 #### In-Person Tutoring
 
@@ -93,20 +81,23 @@ Learning is such a personalized experience that many can find themselves in need
 Learn alongside a skilled tutor. Sessions can be held at several locations depending on availability. This includes your school, a library, a coffee shop, or a downtown office space.
 
 
+#### Online Tutoring
+
+Receive your lesson from any location. I use video chat and an online whiteboard to provide the same high quality instruction I do in person. 
+
+
 #### Group Sessions 
 
-
-Chances are that you're not the only person having difficulty in your math course. Get together with a group of classmates for a review session before an exam. Work together and pay less per person in the process. These are also conducted online using video chat.
+Chances are that you're not the only person having difficulty in your math course. Get together with a group of classmates for a review session before an exam. Collaborate and support each other while paying less per person. These are also conducted online using video chat.
 
 
 #### Custom Study Materials 
 
 
-Want someone to consolidate what you need to know for a test or course in one well designed document? You might also benefit from supplementary exercises to practice for a quiz or test. 
+Want someone to consolidate what you need to know for a test or course in one well designed document? You might also benefit from supplementary exercises to practice for a quiz or test. Reach out to get study resources tailored to your exact needs for more efficient studying.  
 
 
 * * * 
-
 
 ### Recommendations
 
@@ -129,21 +120,18 @@ Strategic and effective tutoring gets results. Read about my students' experienc
 
 ### Course Instruction and Curriculum Development
 
-I have also taught courses in standardized test preparation, probability and statistics, and discrete mathematics. Here are some of my notable outcomes. 
-
-
+I have also taught and developed courses in standardized test preparation, algebra, probability and statistics, and discrete mathematics. Here are some of my notable outcomes. 
 
 
 #### Service: Test prep instruction for the CARS section of the MCAT 
 
-> I received the highest rating possible for student evaluations. 
-
+> The critical thinking and reasoning section of the MCAT is regarded as the most difficult section. I received the highest rating possible in all my student evaluations. 
 
 
 #### Service: Curriculum design for a programming and mathematics course
 
 
-> I created and piloted a course to teach statistics to middle and high schools using the programming language R. This earned a $200,00 grant for further development and was well-received by students. 
+> I created and piloted a course to teach statistics to middle and high schools using the programming language R. This earned a $200,000 grant for further development and was well-received by students. 
 
 
 
