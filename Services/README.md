@@ -8,7 +8,7 @@ I am proud to offer the following freelance services. Pricing and fees are depen
 
 * * * 
 
-### Content Writing 
+## Content Writing 
 
 
 Writing can be a thorn in the side of many businesses.
@@ -50,8 +50,9 @@ A second pair of eyes never hurts. Even better, the input of an experienced writ
 
 
 * * * 
+* * * 
 
-### Recommendations
+## Recommendations
 
 There is no better testament to the quality of my services than the experiences of those with whom I have worked.
 
@@ -62,44 +63,45 @@ There is no better testament to the quality of my services than the experiences 
 
 > "I had the pleasure to meet Carina at Geekdom, where she was an active member and helped organize the writer's group. She took the leadership for this group and kept us in check and organized, so we could progress on our writing skills.
 
-Also, on a personal level, she was an important member on the launch of our first comic book Super Chikis. She helped us with the copy editing as English is not my first language. In this project, Carina was very professional, always providing valuable input and correcting errors a previous copy editor had not picked up. -Luz Andrea Diaz
+>Also, on a personal level, she was an important member on the launch of our first comic book Super Chikis. She helped us with the copy editing as English is not my first language. In this project, Carina was very professional, always providing valuable input and correcting errors a previous copy editor had not picked up. -Luz Andrea Diaz
 
 
 <!--- In general, Carina is a very motivated and detail oriented team mate, where she will be a valuable asset in any team she joins." --->
 
 
 *** 
-### Private Tutoring
+## Private Tutoring
 
 Learning is such a personalized experience that many find themselves in need of one-on-one support. I have been a trusted guide through the mathematical studies of students from a broad range of backgrounds. I provide high quality, personalized mathematics instruction to fit the needs of students of all kinds.
 
 Education opens doors, so work with me to achieve better outcomes in your math courses. I offer several options for maximum flexibility.
 
-#### In-Person Tutoring
+### In-Person Tutoring
 
 
 Learn alongside a skilled tutor. Sessions can be held at several locations depending on availability. This includes your school, a library, a coffee shop, or a downtown office space.
 
 
-#### Online Tutoring
+### Online Tutoring
 
 Receive your lesson from any location. I use video chat and an online whiteboard to provide the same high quality instruction I do in person. 
 
 
-#### Group Sessions 
+### Group Sessions 
 
 Chances are that you're not the only person having difficulty in your math course. Get together with a group of classmates for a review session before an exam. Collaborate and support each other while paying less per person. These are also conducted online using video chat.
 
 
-#### Custom Study Materials 
+### Custom Study Materials 
 
 
 Want someone to consolidate what you need to know for a test or course in one well designed document? You might also benefit from supplementary exercises to practice for a quiz or test. Reach out to get study resources tailored to your exact needs for more efficient studying.  
 
 
 * * * 
+* * * 
 
-### Recommendations
+## Recommendations
 
 
 Strategic and effective tutoring gets results. Read about my students' experiences. 
@@ -118,7 +120,7 @@ Strategic and effective tutoring gets results. Read about my students' experienc
 
 *** 
 
-### Course Instruction and Curriculum Development
+## Course Instruction and Curriculum Development
 
 I have also taught and developed courses in standardized test preparation, algebra, probability and statistics, and discrete mathematics. Here are some of my notable outcomes. 
 
