@@ -1,6 +1,7 @@
-
-
-Title: A brief overview of mathematics courses
+---
+layout: post
+title: A brief overview of mathematics courses
+---
 
 
 <!--- Here is a listing of mathematics courses you may encounter throughout your education. --->
@@ -44,7 +45,7 @@ Schools may offer a course that is a survey of topics in discrete mathematics in
 
 **-Number Theory:** This field explores properties of numbers in general. Principles from this field provided the basis for cryptography and computer science.
 
-###Proof based Courses
+### Proof based Courses
 This broad category includes courses that test a student’s ability to reason and apply principles of logic. Mathematics major are expected to take several proof writing based courses like set theory, abstract algebra, and analysis. Additionally, computer science students should understand these concepts as they apply to programming.
 
 
@@ -54,7 +55,7 @@ A course on ordinary differential equations is generally required for mathematic
 ### Statistics
 Statistics is the study of how to measure and characterize data. Its principles can be widely applied to fields such as psychology, marketing, and actuarial sciences.
 
-###Which courses should I take?
+## Which courses should I take?
 It is recommended that you work with your academic counselor to design a course plan that fits the requirements of your degree plan or course of study.
 
 These courses are sequenced and the details of your degree plan or course of study should be reviewed when registering for classes.
