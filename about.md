@@ -7,7 +7,9 @@ title: About Me
 <!--- ### Carina Mata | Education, Writing, and Mathematics --->
 
 
-I am a San Antonio based writer and educator with a passion for teaching, mathematics, and all forms of communication. For years, I have applied my knowledge and skill set to help others meet their educational and professional goals. As a freelancer, I tutor mathematics from grades K-12 and at the undergraduate level. Additionally, I am a content developer who has written on multiple topics across a variety of genres and for diverse audiences.  
+I am a San Antonio based writer and educator with a passion for teaching, mathematics, and all forms of communication. For years, I have applied my knowledge and skill set to help others meet their educational and professional goals.
+
+As a freelancer, I tutor mathematics from grades K-12 and at the undergraduate level. Additionally, I am a writer who has crafted compelling content for a wide range of purposes and audiences. 
 
 
 * * * 
@@ -18,10 +20,10 @@ I am a San Antonio based writer and educator with a passion for teaching, mathem
 
 <!--- I have studied mathematics, --->
 
-My ongoing project, **[Turn Key Mathematics]** is an effort to address the challenges of learning mathematics. I have worked with many students who considered mathematics an obstacle in their educational journey. This program represents the culmination of my experiences helpings others succeed and thrive in their mathematics courses.  
+My ongoing project, **[Turn Key Mathematics]** is an effort to address the challenges of learning mathematics. I have worked with many students who considered mathematics an obstacle in their educational journey. This program represents the culmination of my experiences helping others succeed and thrive in their mathematics courses.  
 
 
-The online companion guide features my own lessons and learning materials-- each designed in a strategic and effective manner. The overall goal of this program is to ensure college readiness in mathematics for students of all ages and backgrounds.  
+The online companion guide features my own lessons and learning materials--each designed in a strategic and effective manner. The overall goal of this program is to ensure college readiness in mathematics for students of all ages and backgrounds.  
 
 Preview the material at this **[site]**.
 
@@ -33,7 +35,7 @@ Preview the material at this **[site]**.
 From editing and revising essays to writing copy for websites and educational materials, I welcome any opportunity to use my writing talents in a variety of capacities.
 
 
-I have written short stories and poetry as well as promotional content and learning resources. My guidance in writing résumés and cover letters has helped others better represent their skills and background in order to gain admission to undergraduate and graduate schools as well as obtain jobs. 
+I've written short stories and poetry as well as promotional content and learning resources. My guidance in writing résumés and cover letters has helped others better represent their skills and background in order to gain admission to undergraduate and graduate schools as well as obtain jobs. 
 
 Head to the **[writing section]** for samples of my work.
 
