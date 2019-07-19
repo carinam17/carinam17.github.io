@@ -9,13 +9,13 @@ Studying for a test is much more difficult when not approached in a strategic ma
 
 1. Determine which topics will be tested on by consulting your instructor or syllabus. Write them down from most to least frequently tested.
 
-2. Gather any notes, quizzes, and tests that may apply to the upcoming test. It is important to stay organized in your courses so use notebooks and binders.
+2. Gather any notes, quizzes, and tests that may apply to the upcoming test. It is important to stay organized in your courses, so use notebooks and binders.
 
 3. Try to explain each concept to yourself or to a study partner. If you find yourself unable to give a simple explanation, you need to revisit those ideas. 
 
 4. Consult textbooks, notes, or your instructor to clarify any terminology or concepts. Look at solutions and explanations to example problems.
 
-5. Create study aids like flashcards to help with quick recall. This is particularly useful for visual topics or when you need to remember equations or formulas.
+5. Create study aids like flashcards to help with quick recall. This is particularly useful for visual topics or when you need to remember equations, definitions, and formulas.
 
 6. Build accuracy by continuing to complete example problems and exercises. You can achieve this by goal by practicing consistently.
 
