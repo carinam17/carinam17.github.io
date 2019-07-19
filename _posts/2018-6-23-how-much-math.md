@@ -14,7 +14,7 @@ For non-science and non-math majors, schools will set a terminal course or requi
 ### Physical Sciences
 Expect to take all or part of a calculus sequence for chemistry, physics, astronomy, and biology. You may also need to take differential equations and linear algebra for physics.
 
-###m Engineering
+### Engineering
 Engineering students need a full calculus sequence and may also require differential equations and linear algebra.
 
 #### Computer Science
@@ -27,7 +27,7 @@ Business majors may need to take a specific calculus course designed for busines
 To apply to medical schools, you will need to have completed calculus courses. Check the requirements of your prospective schools.
 
 
-Taking steps to ensure college readiness in mathematics will help save money on classes and set you up for better outcomes overall. 
+Taking steps to ensure college readiness in mathematics will help save money on classes and set you up for better outcomes overall. Consider taking some time to refresh your knowledge of math concepts before starting classes again, especially if it's been a while since you've seen the material. 
 
 
 Keep in mind that these are very broad categories, but in my experience, they are a good guideline for what to expect in your particular field of study. As always, consulting your program requirements and school advisors is highly recommended.
