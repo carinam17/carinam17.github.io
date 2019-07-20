@@ -1,17 +1,15 @@
 ---
 layout: page
-title: Tutoring
+title: Math lessons made for you
 ---
 
 
-### Subjects 
+%### Subjects 
 
-I have tutored students in the following courses.
-
-* Middle Sequence 
+<! ---I have tutored students in the following courses. * Middle Sequence 
 
 
-## Private Tutoring
+%## Private Tutoring
 
 Learning is such a personalized experience that many find themselves in need of one-on-one support. I have been a trusted guide through the mathematical studies of students from a broad range of backgrounds. I provide high quality, personalized mathematics instruction to fit the needs of students of all kinds.
 
@@ -37,6 +35,8 @@ Chances are that you're not the only person having difficulty in your math cours
 
 
 Want someone to consolidate what you need to know for a test or course in one well designed document? You might also benefit from supplementary exercises to practice for a quiz or test. Reach out to get study resources tailored to your exact needs for more efficient studying.  
+
+
 
 
 * * * 
