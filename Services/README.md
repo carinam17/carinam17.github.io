@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Services
+title: Writing
 ---
 
 
@@ -21,7 +21,7 @@ Across all platforms, precise messaging draws a customer and makes the case for 
 
 #### Website copy
 
-Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can facilitate this goal. This written content (known as copy) can include biographies, company profiles, product and service descriptions. 
+Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can facilitate this goal--an important component of which is clear and compelling content. This written content (known as copy) can include biographies, company profiles, product and service descriptions. 
 
 
 #### Product names, slogans, and taglines
@@ -46,7 +46,7 @@ Let a descriptive and precise product description show clients and customers exa
 
 #### Line Editing and Revision
 
-A second pair of eyes never hurts. Even better, the input of an experienced writer can enhance the impact of your written content. From grammatical errors to improvements in structure and format, line editing and revision services are a great option for businesses looking to refine and polish their messaging. 
+A second pair of eyes never hurts. Even better, the input of an experienced writer can enhance the impact of your written content. From catching elusive grammatical errors to improving structure and format, line editing and revision services are a great option for businesses looking to refine and polish their messaging. 
 
 
 * * * 
