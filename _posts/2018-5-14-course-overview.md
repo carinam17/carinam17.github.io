@@ -35,15 +35,15 @@ Expect to take calculus courses if you are majoring in the following subjects:
 
 Schools may offer a course that is a survey of topics in discrete mathematics in addition to specific courses for each field. Below are some of the fields included in discrete mathematics.
 
-**-Logic:** This provides the language and framework of mathematical reasoning.The concepts are also important in programming.
+**Logic:** This provides the language and framework of mathematical reasoning.The concepts are also important in programming.
 
-**-Set Theory:** The study of objects known as sets. Many fields of math include principles of set theory.
+**Set Theory:** The study of objects known as sets. Many fields of math include principles of set theory.
 
-**-Combinatorics:** This is the study of how structures can be combined and arranged.
+**Combinatorics:** This is the study of how structures can be combined and arranged.
 
-**-Probability:** This subject concerns measuring the likelihood that an event will occur.
+**Probability:** This subject concerns measuring the likelihood that an event will occur.
 
-**-Number Theory:** This field explores properties of numbers in general. Principles from this field provided the basis for cryptography and computer science.
+**Number Theory:** This field explores properties of numbers in general. Principles from this field provided the basis for cryptography and computer science.
 
 ### Proof based Courses
 This broad category includes courses that test a student’s ability to reason and apply principles of logic. Mathematics major are expected to take several proof writing based courses like set theory, abstract algebra, and analysis. Additionally, computer science students should understand these concepts as they apply to programming.
