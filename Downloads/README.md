@@ -3,11 +3,12 @@ Here are resources for various topics in mathematics, IT, and writing. I hope th
 
 
 ### Mathematics
-I have tutored and taught mathematics for years. Here are some exercises and strategies that I have recommended to students to help them progress at a faster pace as well as achieve better outcomes in their courses. 
+I have tutored and taught mathematics for years. Here are some exercises and strategies that I have recommended to students to help them progress at a faster pace as well as achieve better outcomes in their courses. The full set of resources will be released as Turnkey Mathematics in fall of 2019. 
+
 
 #### Factoring Numbers Practice
 
-The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks. Use these [exercises]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper. Time yourself and see if you can improve how quickly you can complete a [set.]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) . 
+The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks. Use these [exercises]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper. Time yourself and see if you can improve how quickly you can complete a [set.]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf)
 
 
 ### Spanish
@@ -34,8 +35,8 @@ Flash cards can be used effectively to retain vocabulary. The following sets are
 
 A common strategy in language learning is to start with the most commonly used words in that language. This makes sense given that you are more likely to encounter those words when speaking and reading. The following are sets of common verbs. 
 
-*[Set 1]({{ carinam17.github.io }}/Downloads/12_Common_Verbs_Part_1.pdf)
-*[Set 1]({{ carinam17.github.io }}/Downloads/Common_Verbs_Set_2.pdf)
+[Set 1]({{ carinam17.github.io }}/Downloads/12_Common_Verbs_Part_1.pdf)
+[Set 2]({{ carinam17.github.io }}/Downloads/Common_Verbs_Set_2.pdf)
 
 ### Content Writing
 
@@ -45,6 +46,8 @@ Writing copy for a website or marketing material can seem like a daunting task. 
  
 
 ### IT 
+
+Here are some resources to help certification exams like the Network+ and Security+.
 
 #### Flash Card Sets
 
