@@ -20,13 +20,14 @@ As a freelancer, I tutor mathematics from grades K-12 and at the undergraduate l
 
 <!--- I have studied mathematics, --->
 
-My ongoing project, **[Turn Key Mathematics]** is an effort to address the challenges of learning mathematics. I have worked with many students who considered mathematics an obstacle in their educational journey. This program represents the culmination of my experiences helping others succeed and thrive in their mathematics courses.  
+My ongoing project, **Turn Key Mathematics** is an effort to address the challenges of learning mathematics. I have worked with many students who considered mathematics an obstacle in their educational journey. This program represents the culmination of my experiences helping others succeed and thrive in their mathematics courses.  
 
 
 The online companion guide features my own lessons and learning materials--each designed in a strategic and effective manner. The overall goal of this program is to ensure college readiness in mathematics for students of all ages and backgrounds.  
 
-Preview the material at this **[site]**.
+<!--- Preview the material at this **[site]**.
 
+**Turn Key Mathematics** will be available in fall of 2019. 
 
 *** 
 
@@ -37,7 +38,7 @@ From editing and revising essays to writing copy for websites and educational ma
 
 I've written short stories and poetry as well as promotional content and learning resources. My guidance in writing résumés and cover letters has helped others better represent their skills and background in order to gain admission to undergraduate and graduate schools as well as obtain jobs. 
 
-Head to the **[writing section]** for samples of my work.
+<!-- Head to the **[writing section]** for samples of my work. --->
 
 * * * 
 
@@ -47,10 +48,10 @@ Head to the **[writing section]** for samples of my work.
 I completed Rackspace Open Cloud Academy's cybersecurity course in December 2018 and earned two security certifications, [CompTIA Security +](https://certification.comptia.org/certifications/security) and the [Associate of (ICS)<sup>2</sup>](https://www.isc2.org/Certifications/Associate). Additionally, I'm comfortable with several programming languages and operating systems.
 
 
-I am not currently seeking a career in cybersecurity, but I continue to use my technical knowledge in the development of tools and methods to teach interdisciplinary STEM. Read more about that work **[here]**.  
+I am not currently seeking a career in cybersecurity, but I continue to use my technical knowledge in the development of tools and methods to teach interdisciplinary STEM. <!--- Read more about that work **[here]**.  --->
 
 
-Visit my **[IT section]** to find study materials for the CompTIA Security+ and CCNA certification exams. 
+<!--- Visit my **[IT section]** to find study materials for the CompTIA Security+ and CCNA certification exams. --->
 
 
 * * * 
