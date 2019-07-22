@@ -74,7 +74,7 @@ There is no better testament to the quality of my services than the experiences 
 Learning is such a personalized experience that many find themselves in need of one-on-one support. I have been a trusted guide through the mathematical studies of students from a broad range of backgrounds. I provide high quality, personalized mathematics instruction to fit the needs of students of all kinds.
 Education opens doors, so work with me to achieve better outcomes in your math courses. I offer several options for maximum flexibility. --->
 
-<!---### In-Person Tutoring
+<!--- ### In-Person Tutoring
 Learn alongside a skilled tutor. Sessions can be held at several locations depending on availability. This includes your school, a library, a coffee shop, or a downtown office space.
 ### Online Tutoring
 Receive your lesson from any location. I use video chat and an online whiteboard to provide the same high quality instruction I do in person. 
