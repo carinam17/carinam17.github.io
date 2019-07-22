@@ -1,5 +1,5 @@
 
-Here are resources for various topics in mathematics, IT, and writing. I hope they are helpful in your studies. Reach out to me if you have questions, comments, or suggestions about these materials. 
+Here are resources for various topics in mathematics, IT, and writing. I hope they are helpful in your studies. Reach out to me if you have questions, comments, or suggestions about these materials. And check back in for more materials as I upload them.  
 
 
 ### Mathematics
@@ -8,12 +8,12 @@ I have tutored and taught mathematics for years. Here are some exercises and str
 
 #### Factoring Numbers Practice
 
-The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks. Use these [exercises]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper. Time yourself and see if you can improve how quickly you can complete a [set.]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf)
+The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks. Use these [exercises]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper. Time yourself and practice to improve how quickly you can complete a [set.]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf)
 
 
 ### Spanish
 
-Spanish is a lovely language with a rich literary tradition. I am grateful to have access to the language. Below are some resources I've made to help a intermediate Spanish student. 
+Spanish is a lovely language with a rich literary tradition. I am grateful to have access to the language through my parents. Below are some resources I've made to help an intermediate Spanish student. 
 
 
 #### Present Indicative Guide 
