@@ -17,7 +17,8 @@ Spanish is a lovely language with a rich literary tradition. I am grateful to ha
 
 #### Present Indicative Guide 
 
-The present indicative is the first tense learned by students of Spanish. Use this three part guide to understand how to form and use the present indicative: [Part 1]({{ carinam17.github.io }}/Downloads/Present Indicative Guide Part 1.pdf)
+The present indicative is the first tense learned by students of Spanish. Use this guide to understand how to form and use the present indicative: [Part 1]({{ carinam17.github.io }}/Downloads/Present Indicative Guide Part 1.pdf)
+
 
 #### Flash Card Sets
 
@@ -33,7 +34,8 @@ Flash cards can be used effectively to retain vocabulary. The following sets are
 
 A common strategy in language learning is to start with the most commonly used words in that language. This makes sense given that you are more likely to encounter those words when speaking and reading. The following are sets of common verbs. 
 
-[Set 1]({{ carinam17.github.io }}/Downloads/12_Common_Verbs_Part_1.pdf)
+*[Set 1]({{ carinam17.github.io }}/Downloads/12_Common_Verbs_Part_1.pdf)
+*[Set 1]({{ carinam17.github.io }}/Downloads/Common_Verbs_Set_2.pdf)
 
 ### Content Writing
 
