@@ -47,7 +47,7 @@ I have tutored students in the following courses. Read an overview of those cour
 * Linear Algebra
 * Logic
 * Probability
-* Statitics
+* Statistics
 * Discrete Mathematics
 
 
@@ -61,13 +61,15 @@ Strategic and effective tutoring gets results. Read about my students' experienc
 
 #### Service: Tutoring in mathematics
 
-> "Carina Mata helped me earn an "A" in my Introduction to Mathematics class at UT!  As someone who has never been good at math, I was amazed at my progress. Carina was able to explain concepts in a way that finally made sense.  I was no longer afraid of math and I looked forward to our tutoring sessions. Carina really helped me to gain confidence in my ability to learn just about anything!"  -Rebecca H.
+> "Carina Mata helped me earn an "A" in my Introduction to Mathematics class at UT!  As someone who has never been good at math, I was amazed at my progress. Carina was able to explain concepts in a way that finally made sense.  I was no longer afraid of math and I looked forward to our tutoring sessions. Carina really helped me to gain confidence in my ability to learn just about anything!"  
+-Rebecca H.  
 
 
 #### Service: Tutoring in General Physics, General Chemistry, and Calculus I and II
 
 
-> "Carina Mata is an enthusiastic and hardworking teacher. She not only created interesting applications for Physics and Chemistry problems, but she also patiently guided me through any frustrations I faced while enrolled in those courses. I truly appreciated her efforts to familiarize herself with my learning style and to tailor her lesson plans to fit my preferred methodology. She was even able to engage me in material I would not have otherwise explored."  -Anne V.
+> "Carina Mata is an enthusiastic and hardworking teacher. She not only created interesting applications for Physics and Chemistry problems, but she also patiently guided me through any frustrations I faced while enrolled in those courses. I truly appreciated her efforts to familiarize herself with my learning style and to tailor her lesson plans to fit my preferred methodology. She was even able to engage me in material I would not have otherwise explored."  
+-Anne V.  
 
 
 *** 
