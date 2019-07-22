@@ -50,7 +50,6 @@ A second pair of eyes never hurts. Even better, the input of an experienced writ
 
 
 * * * 
-* * * 
 
 ## Recommendations
 
@@ -69,13 +68,11 @@ There is no better testament to the quality of my services than the experiences 
 <!--- In general, Carina is a very motivated and detail oriented team mate, where she will be a valuable asset in any team she joins." --->
 
 
-*** 
 <!--- ## Private Tutoring
 Learning is such a personalized experience that many find themselves in need of one-on-one support. I have been a trusted guide through the mathematical studies of students from a broad range of backgrounds. I provide high quality, personalized mathematics instruction to fit the needs of students of all kinds.
 Education opens doors, so work with me to achieve better outcomes in your math courses. I offer several options for maximum flexibility. --->
 
-<!--- ### In-Person Tutoring
-Learn alongside a skilled tutor. Sessions can be held at several locations depending on availability. This includes your school, a library, a coffee shop, or a downtown office space.
+<!--- Learn alongside a skilled tutor. Sessions can be held at several locations depending on availability. This includes your school, a library, a coffee shop, or a downtown office space.
 ### Online Tutoring
 Receive your lesson from any location. I use video chat and an online whiteboard to provide the same high quality instruction I do in person. 
 ### Group Sessions 
