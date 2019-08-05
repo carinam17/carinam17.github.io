@@ -25,7 +25,7 @@ You've probably had a professor or instructor who walks into class, talks at the
 ### Teaches in your preferred learning style
 Every mind is different, so a good tutor shouldn't expect to teach the same way every time. Using visual aids or different communication styles, a tutor will adapt to the needs of the student.
 
-### Reinforces Key Skills and Concepts
+### Reinforces key skills and concepts
 In order to sharpen any skill set, you need to practice in an effective way. A good tutor provides example problems and exercises to test understanding. These should be illustrative and at the appropriate skill level.
 
 ### Demonstrates a patient attitude
