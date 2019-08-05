@@ -11,6 +11,17 @@ I have tutored and taught mathematics for years. Here are some exercises and str
 The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks. Use these [exercises]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper. Time yourself and practice to improve how quickly you can complete a [set.]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf)
 
 
+#### Quick Reviews
+
+
+Quick Reviews are short guides to refresh your knowledge of a topic and keep as around as reference materials. 
+
+
+[**Angles**]({{ carinam17.github.io }}/Downloads/ReviewofAngles.pdf)
+
+
+
+
 ### Spanish
 
 Spanish is a lovely language with a rich literary tradition. I am grateful to have access to the language through my parents. Below are some resources I've made to help an intermediate Spanish student. 
