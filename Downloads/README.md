@@ -40,7 +40,7 @@ Flash cards can be used effectively to retain vocabulary. The following sets are
 
 [**Days of the Week**]({{ carinam17.github.io }}/Downloads/Days_of_the_Week_Flashcards.pdf)
 
-[**Colors**]({{ carinam17.github.io }}/Downloads/Colors.pdf)
+<!--- [**Colors**]({{ carinam17.github.io }}/Downloads/Colors.pdf)--->
 
 #### Verb Lists
 
