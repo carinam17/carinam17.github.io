@@ -5,7 +5,7 @@ title: How much math do I need to take?
 
 Since math is so widely applicable, most programs of study will require the successful completion of a certain number of courses. In general, an understanding of algebra is expected at an undergraduate level. Many schools use standardized tests for placement, so expect to have to demonstrate a certain proficiency with high school level math before being able to take college level math courses. 
 
-Schools ca also offer and recommend remedial courses to reinforce the subjects. Some schools accept credits earned in high school or by examination and will allow students to take higher level math courses sooner. Here is a breakdown of how much math you may need for a specific major:
+Schools may also offer and recommend remedial courses to reinforce the course content. Some schools accept credits earned in high school or by examination and will allow students to take higher level math courses sooner. Here is a breakdown of how much math you may need for a specific major:
 
 
 ### Liberal arts
