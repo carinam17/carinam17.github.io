@@ -16,6 +16,11 @@ The ability to factor quickly and accurately can help immensely. It will help yo
 
 Quick Reviews are short guides to refresh your knowledge of a topic and keep as around as reference materials. 
 
+### Algebra
+
+
+[**Cartesian Plane and Coordinates**]({{ carinam17.github.io }}/Downloads/CartesianPlane.pdf)
+
 
 ### Geometry
 
