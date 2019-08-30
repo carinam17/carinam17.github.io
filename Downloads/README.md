@@ -24,6 +24,10 @@ Quick Reviews are short guides to refresh your knowledge of a topic and keep as 
 [**Triangles**]({{ carinam17.github.io }}/Downloads/TrianglesIntro.pdf)
 
 
+#### Trigonometry
+
+[**Sine, Cosine, and Tangent**]({{ carinam17.github.io }}/Downloads/TrigonometryRatiosIntro.pdf)
+
 
 ### Spanish
 
