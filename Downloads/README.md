@@ -8,7 +8,7 @@ I have tutored and taught mathematics for years. Here are some exercises and str
 
 #### Factoring Numbers Practice
 
-The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks. Use these [**exercises**]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper to build this key skill. <!---! Time yourself and practice to improve how quickly you can complete a [**set**.]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf)
+The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks. Use these [**exercises**]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper to build this key skill. <!--- Time yourself and practice to improve how quickly you can complete a [**set**.]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) --->
 
 
 #### Quick Reviews
