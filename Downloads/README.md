@@ -31,8 +31,9 @@ Quick Reviews are short guides to refresh your knowledge of a topic and keep as 
 
 ### Trigonometry
 
-[**Sine, Cosine, and Tangent**]({{ carinam17.github.io }}/Downloads/TrigonometryRatiosIntro.pdf)
-[**Unit_Circle_Intro**]({{ carinam17.github.io }}/Downloads/Unit_Circle_Intro.pdf)
+[**Sine, Cosine, and Tangent**]({{ carinam17.github.io }}/Downloads/TrigonometryRatiosIntro.pdf)  
+
+[**Unit Circle Intro**]({{ carinam17.github.io }}/Downloads/Unit_Circle_Intro.pdf)
 
 ### Spanish
 
