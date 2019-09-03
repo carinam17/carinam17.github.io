@@ -3,9 +3,7 @@ layout: post
 title: What makes an effective tutor?
 ---
 
-<!---A skilled tutor has to do much more than simply repeat the information as it makes sense to them. Instead, they need to adapt their communication in order to target the learning style and educational background of their student. 
-
-
+There are some traits and practices you should look for in a tutor to get the full benefit of one-on-one instruction.
 
 ## A skilled and effective tutor: 
 
