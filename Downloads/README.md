@@ -1,4 +1,3 @@
-# Resource Area
 
 Here are resources for various topics in mathematics, information technology, and writing. Reach out to me if you have questions, comments, or suggestions about these materials. And check back in periodically as I continue to upload resources.  
 
