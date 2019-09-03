@@ -19,12 +19,12 @@ Across all platforms, precise messaging draws a customer and makes the case for 
 
  
 
-#### Website copy
+### Website copy
 
 Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can facilitate this goal--an important component of which is clear and compelling content. This written content (known as copy) can include biographies, company profiles, product and service descriptions. 
 
 
-#### Product names, slogans, and taglines
+### Product names, slogans, and taglines
 
 What's in a name? Quite a bit, since it is often the first impression clients and customers will have about your product or service. 
 
@@ -32,19 +32,19 @@ Clarity combined with stylistically interesting and vivid descriptions will posi
 
 
 
-#### Blog posts
+### Blog posts
 
 
 Blog posts are opportunities to educate potential customers as well as position yourself as an authority in your field and your company as a dependable leader in your field. Share this content on social media to further engage your audience and draw prospects to your business. 
 
-These pieces should be interesting and engaging to a human reader yet optimized to be suggested by search engines. Blog writing takes valuable time, so considering delegating that task to a writer if you need blogs as marketing material. 
+These pieces should be interesting and engaging to a human reader, yet optimized to be suggested by search engines. Blog writing takes valuable time, so consider delegating this important task to a writer if you need blogs as marketing material. 
 
-#### Product and service descriptions
+### Product and service descriptions
 
-Let a descriptive and precise product description show clients and customers exactly what advantage you offer and remove any doubt that you or your business are the best in your class. This content is especially critical for landing pages and online stores.
+Let a descriptive and precise product description show clients and customers exactly what advantage you offer and remove any doubt that you or your business are the best in your class. This content is especially critical for landing pages and online stores. Prospective customers make decisions soon after engaging with your digital content. 
 
 
-#### Line Editing and Revision
+### Line Editing and Revision
 
 A second pair of eyes never hurts. Even better, the input of an experienced writer can enhance the impact of your written content. From catching elusive grammatical errors to improving structure and format, line editing and revision services are a great option for businesses looking to refine and polish their messaging. 
 
