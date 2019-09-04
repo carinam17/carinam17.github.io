@@ -18,6 +18,11 @@ Use these [**exercises**]({{ carinam17.github.io }}/Downloads/Factoring_Practice
 
 Quick Reviews are short guides to refresh your knowledge of a topic and keep handy as reference material. 
 
+### Fundamentals
+
+This [**introduction to fractions**]({{ carinam17.github.io }}/Downloads/FractionsIntro.pdf) explores the concept of fractions as values between whole numbers on the number line. 
+
+
 ### Algebra
 
 
