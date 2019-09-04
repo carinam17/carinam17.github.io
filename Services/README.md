@@ -4,8 +4,7 @@ title: Writing
 ---
 
 
-I am proud to offer the following freelance services. Pricing and fees are dependent on the scope and specifications of the project. Reach out to me to see how I can help you. 
-
+I am proud to offer the following freelance services. Pricing and fees are dependent on the scope and specifications of the project. Reach out to me to see how I meet your content writing needs. 
 * * * 
 
 ## Content Writing 
