@@ -65,5 +65,11 @@ There is no better testament to the quality of my services than the experiences 
 >Also, on a personal level, she was an important member on the launch of our first comic book Super Chikis. She helped us with the copy editing as English is not my first language. In this project, Carina was very professional, always providing valuable input and correcting errors a previous copy editor had not picked up. -Luz Andrea Diaz
 
 
+#### Service: Copywriting
+
 <!--- In general, Carina is a very motivated and detail oriented team mate, where she will be a valuable asset in any team she joins." --->
 
+
+> I always contact Carina for any of my copy content needs. She is very knowledgeable in writing for personal, business, or for corporate purposes. She has helped me enhance the copy content I previously had on my personal website and also wrote all the copy content for my business site.   
+
+>Carina is my go to person if I may need any work as simple as a blog post, to brochures, to press releases. She is professional and does her research to make sure copy content is modern, captures the readers attention, and presents copy in a timely manner. -Angelica Espinoza
