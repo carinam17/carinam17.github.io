@@ -1,17 +1,18 @@
+# Resource Area
 
 Here are resources for various topics in mathematics, information technology, and writing. Reach out to me if you have questions, comments, or suggestions about these materials. And check back in periodically as I continue to upload resources.  
 
 
 ## Mathematics
 
-I have tutored and taught mathematics for years. Here are some exercises, guides, notes, and strategies I have recommended to students to help them progress at a faster pace as well as achieve better outcomes in their courses. The full set of resources will be released as Turnkey Mathematics in fall of 2019. 
+I have tutored and taught mathematics for years. Here are some exercises, guides, notes, and strategies I have created for students to help them progress at a faster pace and achieve better outcomes in their courses. The full set of resources will be released as Turnkey Mathematics in fall of 2019. 
 
 
 ### Factoring Numbers Practice
 
 The ability to factor quickly and accurately can help immensely. It will help you simplify and add fractions, factor polynomials, and work with ratios among other mathematical tasks.   
 
-Use these [**exercises**]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper to build this key skill. You may also use a whiteboard to erase and start over again. 
+Use these [**exercises**]({{ carinam17.github.io }}/Downloads/Factoring_Practice.pdf) to factor numbers quickly. Print them out or simply write them on a sheet of paper to build this key skill. You may also use a whiteboard to quickly erase and repeat the exercises.
 
 
 ## Quick Reviews
@@ -79,7 +80,7 @@ Writing copy for a website or marketing material can seem like a daunting task. 
  
 ### Overview of Websites
  
-Here is a quick [**introduction**]({{ carinam17.github.io }}/Downloads/Website_Overview.pdf) to considerations for website design. Creating a website doesn't need to be a hassle, so take the time to strategize before beginning work on your new site. 
+Here is a quick [**introduction**]({{ carinam17.github.io }}/Downloads/Website_Overview.pdf) to considerations for website design. Creating a website doesn't need to be a hassle if you strategize before beginning work on your new site. 
 
 ## Information Technology
 
@@ -89,26 +90,28 @@ Here are some resources to help you study for certification exams like the Netwo
 
 IT Certification exams require the test taker to be able to accurately recall facts and defintions. Flash cards are helpful in this case, however I suggest creating a memory game.  
 
-Place all the cards face down on a surface.   
 
-Flip two over at a time.   
+1. Place all the cards face down on a surface.   
 
-If you don't find a matching pair, return the cards facedown and select again.   
+2. Flip two over at a time.   
+
+3. If you don't find a matching pair, return the cards facedown and select again.  
+
 
 Since you have to commit the terms to memory during the game, you will further strengthen your ability to recall them later.   
 
 
-
 [**Protocol Port Numbers**]({{ carinam17.github.io }}/Downloads/Port_Number_Flashcards.pdf)
+
 
 [**Malware**]({{ carinam17.github.io }}/Downloads/Malware_Flashcards.pdf)
 
 
-### Binary Practice
+### Binary Number Guides
 
 Binary numbers are used extensively in IT. Use this two part guide to understand binary numbers:
 
-[**Part 1**]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_1.pdf) and [**Part 2**]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_2.pdf)
+[**Part 1**]({{ carinam17.github.io }}/Downloads/Binary_Part_I.pdf) and [**Part 2**]({{ carinam17.github.io }}/Downloads/Binary_Guide_Part_2.pdf)
 
 
 
