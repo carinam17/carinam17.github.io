@@ -20,20 +20,20 @@ Across all platforms, precise messaging draws a customer and makes the case for 
 *** 
 ### Website copy
 
-Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can meet this goal--an important component of which is clear and compelling content.  Written content (known as copy) includes biographies, company profiles, product and service descriptions. 
+Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can meet this goal--an important component of which is clear and compelling content.  Written content (known as copy) includes biographies, company profiles, and product or service descriptions. 
 
 
 ### Product names, slogans, and taglines
 
 What's in a name? Quite a bit, since it is often the first impression clients and customers will have about your company, products, or services. 
 
-Clarity combined with stylistically interesting and vivid descriptions will position your product and service as exactly what your customers and clients want or need, so make sure every word counts.
+Clarity combined with stylistically interesting and vivid descriptions position your product and service as exactly what your customers and clients want or need, so make sure every word counts.
 
 ### Blog posts
 
 Blog posts are opportunities to educate potential customers as well as position yourself as an authority in your field or your company as a dependable leader in your field. Sharing this content on social media further engages your audience and draw prospects to your business. 
 
-These pieces should be interesting and engaging to a human reader, yet optimized to be suggested by search engines. Since blog writing takes valuable time, consider delegating this important task to a writer.
+These pieces should be interesting and appealing to a human reader, yet optimized to be suggested by search engines. Since blog writing takes valuable time, consider delegating this important task to a writer.
 
 ### Product and service descriptions
 
