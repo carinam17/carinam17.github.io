@@ -4,7 +4,7 @@ title: Writing
 ---
 
 
-I am proud to offer the following freelance services. Pricing and fees are dependent on the scope and specifications of the project. Reach out to me to see how I meet your content writing needs. 
+I offer the following freelance writing and editing services. Pricing and fees are dependent on the scope and specifications of the project. Reach out to me to see how I meet your content writing needs. 
 * * * 
 
 ## Content Writing 
@@ -17,15 +17,15 @@ The right words speak volumes and capture the essence of your brand. Less than o
 Across all platforms, precise messaging draws a customer and makes the case for your business, products, or services. I provide the following content types to suit your needs. 
 
  
-
+*** 
 ### Website copy
 
-Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can facilitate this goal--an important component of which is clear and compelling content. This written content (known as copy) can include biographies, company profiles, product and service descriptions. 
+Businesses and service providers don't necessarily need a website; they need more customers and clients. The good news is that a strategically designed website can meet this goal--an important component of which is clear and compelling content.  Written content (known as copy) includes biographies, company profiles, product and service descriptions. 
 
 
 ### Product names, slogans, and taglines
 
-What's in a name? Quite a bit, since it is often the first impression clients and customers will have about your product or service. 
+What's in a name? Quite a bit, since it is often the first impression clients and customers will have about your company, products, or services. 
 
 Clarity combined with stylistically interesting and vivid descriptions will position your product and service as exactly what your customers and clients want or need. 
 
@@ -61,7 +61,7 @@ There is no better testament to the quality of my services than the experiences 
 
 > "I had the pleasure to meet Carina at Geekdom, where she was an active member and helped organize the writer's group. She took the leadership for this group and kept us in check and organized, so we could progress on our writing skills.
 
->Also, on a personal level, she was an important member on the launch of our first comic book Super Chikis. She helped us with the copy editing as English is not my first language. In this project, Carina was very professional, always providing valuable input and correcting errors a previous copy editor had not picked up. -Luz Andrea Diaz
+>Also, on a personal level, she was an important member on the launch of our first comic book Super Chikis. She helped us with the copy editing as English is not my first language. In this project, Carina was very professional, always providing valuable input and correcting errors a previous copy editor had not picked up. -Luz D.
 
 
 #### Service: Copywriting
@@ -71,4 +71,4 @@ There is no better testament to the quality of my services than the experiences 
 
 > I always contact Carina for any of my copy content needs. She is very knowledgeable in writing for personal, business, or for corporate purposes. She has helped me enhance the copy content I previously had on my personal website and also wrote all the copy content for my business site.   
 
->Carina is my go to person if I may need any work as simple as a blog post, to brochures, to press releases. She is professional and does her research to make sure copy content is modern, captures the readers attention, and presents copy in a timely manner. -Angelica Espinoza
+>Carina is my go to person if I may need any work as simple as a blog post, to brochures, to press releases. She is professional and does her research to make sure copy content is modern, captures the readers attention, and presents copy in a timely manner. -Angelica E.
