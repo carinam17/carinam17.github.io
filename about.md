@@ -6,63 +6,21 @@ title: About Me
 
 <!--- ### Carina Mata | Education, Writing, and Mathematics --->
 
+I design clear, structured learning experiences for adult and college-level learners—spanning mathematics, data, and technical skill development.
 
-I am a San Antonio based writer and educator with a passion for teaching, mathematics, and all forms of communication. For years, I have applied my knowledge and skill set to help others meet their educational and professional goals.
-
-As a freelancer, I tutor mathematics from grades K-12 and at the undergraduate level. Additionally, I am a writer who has crafted compelling content for a wide range of purposes and audiences. 
 
 
 * * * 
 
 
-### Mathematics
+### What I Do
 
+I’m Carina Mata, a mathematics educator and instructional designer specializing in adult and college-level learning.
 
+My work focuses on clear explanations, conceptual understanding, and structured practice. I’ve taught and developed curriculum across tutoring, group instruction, test preparation, and self-guided learning environments.
+
+I design instructional content through Convergent Math and collaborate on education and training projects that support learners building quantitative and technical skills.
 <!--- I have studied mathematics, --->
-
-My ongoing project, **Turn Key Mathematics**, is an effort to address the challenges of learning mathematics. I have worked with many students who considered mathematics a significant obstacle in their educational journey. This program represents the culmination of my experiences helping others succeed and thrive in their mathematics courses.  
-
-
-The online companion guide features my own lessons and learning materials--each designed in a strategic and effective manner. The overall goal of this program is to ensure college readiness in mathematics for students of all ages and backgrounds.  
-
-<!--- Preview the material at this **[site]**.
-
-**Turn Key Mathematics** will be available in winter of 2019. 
-
-*** 
-
-### Writing 
-
-From editing and revising essays to writing copy for websites and educational materials, I welcome any opportunity to use my writing talents in a variety of capacities.
-
-
-I've written short stories and poetry as well as promotional content and learning resources. My guidance in writing résumés and cover letters has helped others better represent their skills and background in order to gain admission to undergraduate and graduate schools as well as obtain jobs. 
-
-<!-- Head to the **[writing section]** for samples of my work. --->
-
-* * * 
-
-### Information Technology
-
-
-I completed Rackspace Open Cloud Academy's cybersecurity course in December 2018 and earned two security certifications, [CompTIA Security +](https://certification.comptia.org/certifications/security) and the [Associate of (ICS)<sup>2</sup>](https://www.isc2.org/Certifications/Associate). Additionally, I'm comfortable with several programming languages and operating systems.
-
-
-<!--I am not currently seeking a career in cybersecurity, but I continue to use my technical knowledge in the development of tools and methods to teach interdisciplinary STEM. <!--- Read more about that work **[here]**.  --->
-
-
-<!--- Visit my **[IT section]** to find study materials for the CompTIA Security+ and CCNA certification exams. --->
-
-
-* * * 
-
-
-### Creative Pursuits
-
-My desire to produce thoughtful works extends to fiction writing and musical performance. I've written, revised, edited, and workshopped short stories, poetry, novels, and plays. I am also an avid guitarist who plays in many styles on both acoustic and electric guitars.   
-
-
-These hobbies invite me to be reflective and diligently work at improving my craft. Moreover, I appreciate the ability to create something from which others can derive joy. 
 
 
 
@@ -74,7 +32,6 @@ These hobbies invite me to be reflective and diligently work at improving my cra
 As much as I enjoy teaching, I know that learning is just as important. With all the diversity of people and ideas, collaboration is critical to any meaningful advancement in knowledge, skill, and experience.   
 
 If you think I may be able to help you in some way, let me know. I especially welcome the input of students and fellow educators in improving and developing my own work. 
-
 
 
 
@@ -142,8 +99,3 @@ Languages:
 * Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
 * Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
 --->
-
-
-<!--- A San Antonio native, Carina Mata is an experienced mathematics tutor who derives great joy from helping others further their education. With particular focus on underrepresented groups, she is developing methods and material to introduce STEM concepts to students of all ages.
-
-She also spends time writing fiction, playing guitar, and working alongside the members of San Antonio’s largest coworking community, Geekdom. Carina dreams of a world where enriching education is available to all. --->
