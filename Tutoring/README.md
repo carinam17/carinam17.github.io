@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Tutoring
+nav_exclude: true
 ---
 
 
