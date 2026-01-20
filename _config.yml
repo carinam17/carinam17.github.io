@@ -4,6 +4,8 @@
 permalink:           pretty
 relative_permalinks: false
 
+exclude: 
+  - README.md
 # Setup
 title:               Carina Mata
 tagline:             Instructional Design | Mathematics 
