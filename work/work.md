@@ -3,7 +3,15 @@ layout: page
 title: Work
 nav_order: 2
 ---
-## Demonstration 
+
+
+
+## Overview
+
+I work at the intersection of **instructional design, mathematics education, and educational technology**. My experience spans curriculum development, live instruction, and data-informed decision making. This includes contract roles, independent projects, and classroom-based teaching, with a focus on clarity, structure, and learner outcomes.
+
+
+
 
 <iframe
   src="https://cm-demos.s3.us-east-2.amazonaws.com/pyg-test/build/web/index.html"
@@ -13,11 +21,6 @@ nav_order: 2
 ></iframe>
 
 
-
-
-## Overview
-
-I work at the intersection of **instructional design, mathematics education, and educational technology**. My experience spans curriculum development, live instruction, and data-informed decision making. This includes contract roles, independent projects, and classroom-based teaching, with a focus on clarity, structure, and learner outcomes.
 
 ---
 
@@ -34,6 +37,9 @@ I work at the intersection of **instructional design, mathematics education, and
 - Designed original math curricula and instructional frameworks for adult learners  
 - Developed modular course materials, workbooks, and workshop content for college readiness, health careers, and test preparation  
 
+
+
+
 ---
 
 ## Teaching & Facilitation
@@ -48,6 +54,9 @@ I work at the intersection of **instructional design, mathematics education, and
 - Delivered live SAT prep courses in structured classroom settings  
 - Guided students through problem-solving strategies, review cycles, and targeted practice  
 - Adapted instruction in real time based on student performance and engagement  
+
+
+
 
 
 ---
