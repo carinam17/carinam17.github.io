@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carina Mata — Portfolio Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:       #02737A;
+      --teal-dark:  #015459;
+      --teal-mid:   #028090;
+      --teal-light: #E8F4F5;
+      --mint:       #02C39A;
+      --cream:      #F7F3EE;
+      --sand:       #EDE8E0;
+      --charcoal:   #2D3436;
+      --muted:      #636E72;
+      --border:     #D8D0C8;
+      --white:      #FFFFFF;
+      --serif:      'DM Serif Display', Georgia, serif;
+      --sans:       'DM Sans', system-ui, sans-serif;
+    }
+
+    /* ── RESET & BASE ── */
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      font-weight: 300;
+      background: var(--cream);
+      color: var(--charcoal);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── SIDEBAR OVERLAY ── */
+    #sidebar-checkbox { display: none; }
+
+    .sidebar {
+      position: fixed;
+      top: 0; left: -18rem;
+      width: 18rem; height: 100vh;
+      background: var(--teal-dark);
+      z-index: 100;
+      transition: left 0.3s cubic-bezier(.4,0,.2,1);
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    #sidebar-checkbox:checked ~ .sidebar {
+      left: 0;
+    }
+
+    #sidebar-checkbox:checked ~ .wrap {
+      transform: translateX(18rem);
+    }
+
+    .sidebar-brand {
+      font-family: var(--serif);
+      font-size: 1.3rem;
+      color: var(--white);
+      margin-bottom: 2rem;
+      display: block;
+      text-decoration: none;
+    }
+
+    .sidebar-brand small {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 400;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 0.2rem;
+    }
+
+    .sidebar nav a {
+      display: block;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: color 0.2s;
+    }
+
+    .sidebar nav a:hover,
+    .sidebar nav a.active {
+      color: var(--mint);
+    }
+
+    .sidebar-footer {
+      margin-top: auto;
+      font-size: 0.72rem;
+      color: rgba(255,255,255,0.3);
+      font-family: var(--sans);
+    }
+
+    /* ── TOGGLE BUTTON ── */
+    .sidebar-toggle {
+      position: fixed;
+      top: 1rem; left: 1rem;
+      z-index: 200;
+      background: var(--teal);
+      border: none;
+      border-radius: 6px;
+      width: 2.2rem; height: 2.2rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      transition: background 0.2s;
+      padding: 0;
+    }
+
+    .sidebar-toggle:hover { background: var(--teal-dark); }
+
+    .sidebar-toggle span {
+      display: block;
+      width: 1.1rem; height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: transform 0.3s;
+    }
+
+    label[for="sidebar-checkbox"] {
+      position: fixed;
+      top: 1rem; left: 1rem;
+      z-index: 200;
+      background: var(--teal);
+      border-radius: 6px;
+      width: 2.2rem; height: 2.2rem;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    label[for="sidebar-checkbox"] span {
+      display: block;
+      width: 1.1rem; height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+    }
+
+    label[for="sidebar-checkbox"]:hover { background: var(--teal-dark); }
+
+    /* Overlay when sidebar open */
+    .sidebar-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.35);
+      z-index: 50;
+    }
+
+    #sidebar-checkbox:checked ~ .sidebar-overlay { display: block; }
+
+    /* ── WRAP & MASTHEAD ── */
+    .wrap {
+      transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .masthead {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem 1rem 4.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+    }
+
+    .masthead-title {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      color: var(--teal-dark);
+    }
+
+    .masthead-title small {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 300;
+      color: var(--muted);
+      letter-spacing: 0.05em;
+      margin-left: 0.5rem;
+    }
+
+    /* ── CONTENT ── */
+    .content {
+      flex: 1;
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+      width: 100%;
+    }
+
+    /* ── AVAILABLE BADGE ── */
+    .available-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(2,195,154,0.1);
+      border: 1px solid rgba(2,195,154,0.3);
+      color: #018a6e;
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.3rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1.5rem;
+    }
+
+    .badge-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--mint);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:.5; transform:scale(0.85); }
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--teal-dark) 0%, var(--teal-mid) 55%, #02909A 100%);
+      border-radius: 16px;
+      padding: 3rem 2.5rem 2.75rem;
+      margin-bottom: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 240px; height: 240px;
+      border-radius: 50%;
+      background: rgba(2,195,154,0.1);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -70px; right: 80px;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mint);
+      margin-bottom: 0.85rem;
+    }
+
+    .hero h1 {
+      font-family: var(--serif);
+      font-size: 2.8rem;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero h1 em {
+      font-style: italic;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .hero-sub {
+      font-family: var(--sans);
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.7;
+      max-width: 500px;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .hero-tag {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.18);
+      color: rgba(255,255,255,0.88);
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 400;
+      padding: 0.28rem 0.8rem;
+      border-radius: 100px;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--mint);
+      color: var(--teal-dark);
+      font-family: var(--sans);
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 0.65rem 1.5rem;
+      border-radius: 100px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .hero-cta:hover {
+      background: #fff;
+      transform: translateY(-1px);
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--teal-light);
+    }
+
+    /* ── CARD GRID ── */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.1rem;
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem 1.25rem;
+      box-shadow: 0 2px 8px rgba(2,115,122,0.06);
+      transition: box-shadow 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--teal), var(--mint));
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(2,115,122,0.13);
+      transform: translateY(-2px);
+    }
+
+    .card:hover::before { opacity: 1; }
+
+    .card-icon { font-size: 1.5rem; margin-bottom: 0.75rem; display: block; }
+
+    .card h3 {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--teal-dark);
+      margin-bottom: 0.45rem;
+    }
+
+    .card p {
+      font-size: 0.84rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ── BODY TEXT ── */
+    .body-text p {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 0.75rem;
+    }
+
+    .body-text ul {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 1.5rem;
+    }
+
+    .body-text ul li {
+      font-size: 0.9rem;
+      color: var(--charcoal);
+      padding: 0.35rem 0 0.35rem 1.4rem;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .body-text ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--teal);
+      font-size: 0.75rem;
+      top: 0.42rem;
+    }
+
+    /* ── CONTACT STRIP ── */
+    .contact-strip {
+      background: var(--teal-dark);
+      border-radius: 14px;
+      padding: 1.75rem 2rem;
+      margin-top: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-strip p {
+      color: rgba(255,255,255,0.82);
+      font-size: 0.92rem;
+      line-height: 1.5;
+    }
+
+    .contact-strip strong { color: var(--white); }
+
+    .contact-btn {
+      background: var(--mint);
+      color: var(--teal-dark);
+      font-family: var(--sans);
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 0.6rem 1.35rem;
+      border-radius: 100px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+
+    .contact-btn:hover { background: var(--white); }
+
+    /* ── PORTFOLIO ITEMS ── */
+    .portfolio-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.75rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 2px 8px rgba(2,115,122,0.06);
+      transition: box-shadow 0.2s;
+    }
+
+    .portfolio-item:hover {
+      box-shadow: 0 6px 24px rgba(2,115,122,0.12);
+    }
+
+    .portfolio-meta {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.85rem;
+    }
+
+    .portfolio-tag {
+      background: var(--teal-light);
+      color: var(--teal-dark);
+      font-size: 0.68rem;
+      font-weight: 700;
+      padding: 0.22rem 0.65rem;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+    }
+
+    .portfolio-item h3 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      color: var(--teal-dark);
+      margin-bottom: 0.55rem;
+    }
+
+    .portfolio-item p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.65;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-link {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--teal);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      transition: gap 0.15s;
+    }
+
+    .portfolio-link:hover { gap: 0.5rem; color: var(--teal-dark); }
+    .portfolio-link::after { content: '→'; }
+
+    /* ── PAGE NAV TABS ── */
+    .page-tabs {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0;
+    }
+
+    .page-tab {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-decoration: none;
+      padding: 0.5rem 0.1rem;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -2px;
+      cursor: pointer;
+      transition: color 0.2s, border-color 0.2s;
+    }
+
+    .page-tab.active { color: var(--teal); border-bottom-color: var(--teal); }
+    .page-tab:hover { color: var(--teal); }
+    .page-tab:not(:last-child) { margin-right: 1.25rem; }
+
+    /* ── PAGE SWITCHING ── */
+    .page { display: none; }
+    .page.active { display: block; }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-family: var(--sans);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero        { animation: fadeUp 0.5s ease both; }
+    .card-grid   { animation: fadeUp 0.5s 0.1s ease both; }
+    .body-text   { animation: fadeUp 0.5s 0.2s ease both; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .hero { padding: 2rem 1.5rem; }
+      .hero h1 { font-size: 2.1rem; }
+      .card-grid { grid-template-columns: 1fr; }
+      .contact-strip { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<input type="checkbox" id="sidebar-checkbox">
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <a href="#" class="sidebar-brand" onclick="showPage('home')">
+    Carina Mata
+    <small>Portfolio</small>
+  </a>
+  <nav>
+    <a href="#" class="active" onclick="showPage('home'); setActive(this)">Home</a>
+    <a href="#" onclick="showPage('work'); setActive(this)">Work</a>
+  </nav>
+  <div class="sidebar-footer">© 2026 Carina Mata</div>
+</aside>
+
+<label for="sidebar-checkbox">
+  <span></span><span></span><span></span>
+</label>
+
+<label for="sidebar-checkbox" class="sidebar-overlay"></label>
+
+<!-- Main -->
+<div class="wrap">
+  <header class="masthead">
+    <h3 class="masthead-title">
+      Carina Mata
+      <small>Instructional Design · Mathematics</small>
+    </h3>
+  </header>
+
+  <main class="content">
+
+    <!-- Page tabs (demo only) -->
+    <div class="page-tabs">
+      <a class="page-tab active" onclick="showPage('home'); setActiveTab(this)">Home</a>
+      <a class="page-tab" onclick="showPage('work'); setActiveTab(this)">Work</a>
+    </div>
+
+    <!-- ── HOME PAGE ── -->
+    <div id="page-home" class="page active">
+
+      <div class="available-badge">
+        <span class="badge-dot"></span>
+        Open to new projects &amp; roles
+      </div>
+
+      <div class="hero">
+        <p class="hero-eyebrow">Instructional Design · Mathematics · EdTech</p>
+        <h1>Learning experiences<br><em>built to last.</em></h1>
+        <p class="hero-sub">I design and deliver instruction that makes complex ideas clear, structured, and genuinely usable — especially for adult learners re-entering technical or academic material.</p>
+        <div class="hero-tags">
+          <span class="hero-tag">Curriculum Design</span>
+          <span class="hero-tag">K–12 Mathematics</span>
+          <span class="hero-tag">Assessment Writing</span>
+          <span class="hero-tag">SAT · ACT · MCAT</span>
+          <span class="hero-tag">Online Instruction</span>
+        </div>
+        <a href="#" class="hero-cta" onclick="showPage('work'); setActiveTab(document.querySelectorAll('.page-tab')[1]); return false;">View My Work</a>
+      </div>
+
+      <p class="section-label">What I Do</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <span class="card-icon">📐</span>
+          <h3>Instructional Design</h3>
+          <p>Course frameworks, learning objectives, and modular materials built for clarity and reuse.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">✏️</span>
+          <h3>Assessment Writing</h3>
+          <p>Original problem sets and item sets aligned to K–12 standards and high-stakes exam frameworks.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">📊</span>
+          <h3>Teaching & Facilitation</h3>
+          <p>Live instruction in mathematics and test prep — small-group, online, and one-on-one.</p>
+        </div>
+      </div>
+
+      <p class="section-label">Background</p>
+
+      <div class="body-text">
+        <p>I've worked across small-group courses, independent curriculum projects, and classroom instruction with a consistent focus on structure, clarity, and learner outcomes.</p>
+        <ul>
+          <li>Designing instructional frameworks for online and hybrid mentor onboarding programs</li>
+          <li>Writing and reviewing K–12 math assessments targeting discrete learning objectives</li>
+          <li>Delivering SAT, ACT, MCAT, and TSI preparation courses for The Princeton Review</li>
+          <li>Building original curricula and problem sets for K–12 and undergraduate mathematics</li>
+        </ul>
+        <p>I hold a Bachelor's degree in Mathematics and bring additional depth in data analysis — Python, SQL, and data visualization — which informs how I think about learner progress and content performance.</p>
+      </div>
+
+      <div class="contact-strip">
+        <p><strong>Currently available</strong> for instructional design contracts, curriculum development, and remote teaching roles.</p>
+        <a href="mailto:carina@carinamc.com" class="contact-btn">Get in touch</a>
+      </div>
+    </div>
+
+    <!-- ── WORK PAGE ── -->
+    <div id="page-work" class="page">
+
+      <p class="section-label">Portfolio</p>
+
+      <div class="body-text" style="margin-bottom:2rem;">
+        <p>A selection of instructional design, curriculum, and assessment work — each piece reflecting a different context and learner need.</p>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Instructional Design</span>
+          <span class="portfolio-tag">Onboarding</span>
+        </div>
+        <h3>Mentor Onboarding Framework</h3>
+        <p>Designed a complete instructional framework for online and hybrid mentor onboarding, including supplemental math preparation resources. Developed the learning architecture, sequenced content modules, and created workbooks aligned to program objectives.</p>
+        <a href="#" class="portfolio-link">View sample</a>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Assessment Writing</span>
+          <span class="portfolio-tag">K–12 Math</span>
+        </div>
+        <h3>K–12 Mathematics Assessment Item Set</h3>
+        <p>An original collection of mathematics assessment items spanning elementary through pre-calculus topics, designed with increasing challenge levels and rigorous attention to mathematical accuracy. Includes achievement-level descriptors and scoring rubric.</p>
+        <a href="#" class="portfolio-link">View sample</a>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Curriculum Development</span>
+          <span class="portfolio-tag">Test Prep</span>
+        </div>
+        <h3>SAT/ACT Math Curriculum Guide</h3>
+        <p>A structured curriculum guide for SAT and ACT mathematics preparation, developed from experience teaching with The Princeton Review. Covers content domains, common misconceptions, and scaffolded practice sequences for small-group instruction.</p>
+        <a href="#" class="portfolio-link">View sample</a>
+      </div>
+
+      <p class="section-label" style="margin-top:2.5rem;">Tools &amp; Technologies</p>
+      <div class="body-text">
+        <p><strong style="color:var(--teal-dark);">Instructional:</strong> Markdown, LaTeX, Google Workspace, Notion, Canva, Loom</p>
+        <p><strong style="color:var(--teal-dark);">Technical:</strong> Python, SQL, Tableau, GitHub Pages</p>
+        <p><strong style="color:var(--teal-dark);">Platforms:</strong> ClassIn, Zoom, Canvas, Google Classroom</p>
+      </div>
+
+      <div class="contact-strip">
+        <p><strong>Want to work together?</strong> I'm open to instructional design contracts, curriculum projects, and remote teaching roles.</p>
+        <a href="mailto:carina@carinamc.com" class="contact-btn">Get in touch</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="footer">© 2026 Carina Mata</footer>
+</div>
+
+<script>
+  function showPage(id) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + id).classList.add('active');
+    // close sidebar
+    document.getElementById('sidebar-checkbox').checked = false;
+  }
+
+  function setActive(el) {
+    document.querySelectorAll('.sidebar nav a').forEach(a => a.classList.remove('active'));
+    el.classList.add('active');
+  }
+
+  function setActiveTab(el) {
+    document.querySelectorAll('.page-tab').forEach(t => t.classList.remove('active'));
+    el.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
