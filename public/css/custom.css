@@ -495,3 +495,41 @@ hr {
     text-align: center;
   }
 }
+
+
+
+/* ── Override Lanyon default red ── */
+.sidebar-toggle:before,
+.sidebar-toggle:after,
+.sidebar-toggle span {
+  background-color: var(--white);
+}
+
+.sidebar-toggle {
+  background-color: var(--teal) !important;
+}
+
+.sidebar-toggle:active,
+#sidebar-checkbox:checked ~ .sidebar-toggle {
+  background-color: var(--teal-dark) !important;
+}
+
+.container a,
+.content a {
+  color: var(--teal) !important;
+}
+
+.container a:hover,
+.content a:hover {
+  color: var(--mint) !important;
+}
+
+.masthead-title a,
+.masthead-title a:hover {
+  color: var(--teal-dark) !important;
+}
+
+.related-posts li a:hover {
+  color: var(--teal) !important;
+}
+
