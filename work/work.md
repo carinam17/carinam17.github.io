@@ -5,22 +5,9 @@ nav_order: 2
 ---
 
 
-
 ## Overview
 
 I work at the intersection of **instructional design, mathematics education, and educational technology**. My experience spans curriculum development, live instruction, and data-informed decision making. This includes contract roles, independent projects, and classroom-based teaching, with a focus on clarity, structure, and learner outcomes.
-
-
-This is a test line. 
-
-This is another test line after a new commit.
-
-<iframe
-  src="https://cm-demos.s3.us-east-2.amazonaws.com/pyg-test/build/web/index.html"
-  style="width: 100%; max-width: 980px; height: 560px; border: 0; border-radius: 12px;"
-  loading="lazy"
-  allow="autoplay; fullscreen"
-></iframe>
 
 
 
@@ -47,11 +34,11 @@ This is another test line after a new commit.
 ## Teaching & Facilitation
 
 
-**Technical Trainer**  
+**Technical Trainer - 2 years**  
 - Taught foundational data concepts, tools, and workflows to adult learners  
 - Bridged technical content with clear explanations and scaffolded examples  
 
-**The Princeton Review**  
+**The Princeton Review - 1 year**  
 *Course Instructor (SAT Math)*  
 - Delivered live SAT prep courses in structured classroom settings  
 - Guided students through problem-solving strategies, review cycles, and targeted practice  
@@ -64,7 +51,7 @@ This is another test line after a new commit.
 ---
 ## Data & Technical Experience
 
-**Data Analyst**  
+**Data Analyst  - 2 years**  
 - Analyzed customer data to support reporting, insights, and instructional use cases
 - Enabled decision-making with meaningful metrics and reports 
 
