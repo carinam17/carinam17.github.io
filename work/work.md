@@ -11,9 +11,11 @@ nav_order: 2
 I work at the intersection of **instructional design, mathematics education, and educational technology**. My experience spans curriculum development, live instruction, and data-informed decision making. This includes contract roles, independent projects, and classroom-based teaching, with a focus on clarity, structure, and learner outcomes.
 
 
-This is a test line. 
 
-This is another test line after a new commit.
+
+
+
+
 
 <iframe
   src="https://cm-demos.s3.us-east-2.amazonaws.com/pyg-test/build/web/index.html"
@@ -47,7 +49,8 @@ This is another test line after a new commit.
 ## Teaching & Facilitation
 
 
-**Technical Trainer**  
+**Codeup** 
+*Instructor* 
 - Taught foundational data concepts, tools, and workflows to adult learners  
 - Bridged technical content with clear explanations and scaffolded examples  
 
@@ -56,7 +59,6 @@ This is another test line after a new commit.
 - Delivered live SAT prep courses in structured classroom settings  
 - Guided students through problem-solving strategies, review cycles, and targeted practice  
 - Adapted instruction in real time based on student performance and engagement  
-
 
 
 
