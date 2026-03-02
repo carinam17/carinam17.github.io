@@ -533,212 +533,6 @@
     .portfolio-link:hover { gap: 0.5rem; color: var(--teal-dark); }
     .portfolio-link::after { content: '→'; }
 
-    /* ── PORTFOLIO ITEM WITH THUMBNAIL ── */
-    .portfolio-item-media {
-      display: grid;
-      grid-template-columns: 1fr 160px;
-      gap: 1.5rem;
-      align-items: start;
-    }
-
-    .portfolio-thumb {
-      width: 100%;
-      aspect-ratio: 16/10;
-      object-fit: cover;
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      background: var(--teal-light);
-      display: block;
-    }
-
-    .portfolio-thumb-placeholder {
-      width: 100%;
-      aspect-ratio: 16/10;
-      border-radius: 8px;
-      border: 1px dashed var(--border);
-      background: var(--sand);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.7rem;
-      color: var(--muted);
-      font-family: var(--sans);
-      text-align: center;
-      padding: 0.5rem;
-      line-height: 1.4;
-    }
-
-    /* ── COMING SOON BADGE ── */
-    .coming-soon-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: var(--sand);
-      border: 1px solid var(--border);
-      color: var(--muted);
-      font-size: 0.7rem;
-      font-weight: 600;
-      padding: 0.22rem 0.65rem;
-      border-radius: 100px;
-      text-transform: uppercase;
-      letter-spacing: 0.07em;
-    }
-
-    /* ── DESIGN PRINCIPLES BLOCK ── */
-    .principles-block {
-      background: var(--teal-light);
-      border-left: 3px solid var(--teal);
-      border-radius: 0 10px 10px 0;
-      padding: 1.4rem 1.6rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .principles-block p {
-      font-size: 0.88rem;
-      color: var(--charcoal);
-      line-height: 1.75;
-      margin-bottom: 0.6rem;
-    }
-
-    .principles-block p:last-child { margin-bottom: 0; }
-
-    .principles-block strong {
-      color: var(--teal-dark);
-      font-weight: 600;
-    }
-
-    /* ── DEGREE LINE ── */
-    .degree-line {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      margin-bottom: 2rem;
-      padding: 0.85rem 1.25rem;
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(2,115,122,0.05);
-    }
-
-    .degree-label {
-      font-family: var(--serif);
-      font-size: 0.95rem;
-      color: var(--teal-dark);
-    }
-
-    .degree-sep {
-      color: var(--border);
-      font-size: 1rem;
-    }
-
-    .degree-school {
-      font-family: var(--sans);
-      font-size: 0.85rem;
-      font-weight: 400;
-      color: var(--muted);
-    }
-
-    /* ── SKILLS ── */
-    .skills-grid, .skills-grid-3 {
-      display: grid;
-      gap: 1.25rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .skills-grid { grid-template-columns: 1fr 1fr; }
-    .skills-grid-3 { grid-template-columns: repeat(3, 1fr); }
-
-    .skills-group {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 1.25rem 1.25rem 1rem;
-      box-shadow: 0 2px 8px rgba(2,115,122,0.06);
-    }
-
-    .skills-group-label {
-      font-family: var(--sans);
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--teal);
-      margin-bottom: 0.85rem;
-    }
-
-    .skills-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-
-    .skill-pill {
-      background: var(--teal-light);
-      color: var(--teal-dark);
-      font-family: var(--sans);
-      font-size: 0.73rem;
-      font-weight: 500;
-      padding: 0.25rem 0.7rem;
-      border-radius: 100px;
-      border: 1px solid rgba(2,115,122,0.15);
-    }
-
-    @media (max-width: 640px) {
-      .skills-grid, .skills-grid-3 { grid-template-columns: 1fr; }
-      .degree-line { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
-    }
-
-    /* ── EXPERIENCE LIST ── */
-    .experience-list {
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      margin-bottom: 2rem;
-    }
-
-    .experience-item {
-      padding: 1.5rem 0;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .experience-item:first-child { border-top: 1px solid var(--border); }
-
-    .experience-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 1rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .experience-role {
-      font-family: var(--serif);
-      font-size: 1rem;
-      color: var(--teal-dark);
-      margin-bottom: 0.2rem;
-    }
-
-    .experience-org {
-      font-size: 0.8rem;
-      font-weight: 500;
-      color: var(--teal);
-    }
-
-    .experience-date {
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: var(--muted);
-      white-space: nowrap;
-      padding-top: 0.2rem;
-    }
-
-    .experience-desc {
-      font-size: 0.87rem;
-      color: var(--muted);
-      line-height: 1.7;
-      margin: 0;
-    }
-
     /* ── PAGE NAV TABS ── */
     .page-tabs {
       display: flex;
@@ -796,8 +590,6 @@
       .hero h1 { font-size: 2.1rem; }
       .card-grid { grid-template-columns: 1fr; }
       .contact-strip { flex-direction: column; text-align: center; }
-      .portfolio-item-media { grid-template-columns: 1fr; }
-      .portfolio-thumb, .portfolio-thumb-placeholder { aspect-ratio: 16/7; }
     }
   </style>
 </head>
@@ -814,7 +606,6 @@
   <nav>
     <a href="#" class="active" onclick="showPage('home'); setActive(this)">Home</a>
     <a href="#" onclick="showPage('work'); setActive(this)">Work</a>
-    <a href="#" onclick="showPage('about'); setActive(this)">About</a>
   </nav>
   <div class="sidebar-footer">© 2026 Carina Mata</div>
 </aside>
@@ -836,11 +627,10 @@
 
   <main class="content">
 
-    <!-- Page tabs -->
+    <!-- Page tabs (demo only) -->
     <div class="page-tabs">
       <a class="page-tab active" onclick="showPage('home'); setActiveTab(this)">Home</a>
       <a class="page-tab" onclick="showPage('work'); setActiveTab(this)">Work</a>
-      <a class="page-tab" onclick="showPage('about'); setActiveTab(this)">About</a>
     </div>
 
     <!-- ── HOME PAGE ── -->
@@ -852,93 +642,73 @@
       </div>
 
       <div class="hero">
-        <p class="hero-eyebrow">Instructional Design · Math Education · EdTech</p>
-        <h1>Learning experiences<br><em>designed, created, delivered.</em></h1>
-        <p class="hero-sub">I design, build, and deliver STEM learning experiences — rigorous in content, intentional in form, and built to work.</p>
+        <p class="hero-eyebrow">Instructional Design · STEM Education · EdTech</p>
+        <h1>Learning experiences<br><em>built for impact.</em></h1>
+        <p class="hero-sub">I design and deliver structured learning experiences, structured, and genuinely usable — especially for adult learners re-entering technical or academic material.</p>
+        <div class="hero-tags">
+          <span class="hero-tag">Curriculum Design</span>
+          <span class="hero-tag">K–12 Mathematics</span>
+          <span class="hero-tag">Assessment Writing</span>
+          <span class="hero-tag">SAT · ACT · MCAT</span>
+          <span class="hero-tag">Online Instruction</span>
+        </div>
         <a href="#" class="hero-cta" onclick="showPage('work'); setActiveTab(document.querySelectorAll('.page-tab')[1]); return false;">View My Work</a>
       </div>
 
-      <div class="degree-line">
-        <span class="degree-label">B.S.A. in Mathematics</span>
-        <span class="degree-sep">·</span>
-        <span class="degree-school">The University of Texas at Austin</span>
+      <p class="section-label">What I Do</p>
+
+      <div class="card-grid">
+        <div class="card">
+          <h3>Curriculum & Instructional Design</h3>
+          <p>I design learning experiences by defining objectives, sequencing content, and building materials that are clear, rigorous, and reusable across online and hybrid formats.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">✏️</span>
+          <h3>Mathematics Education</h3>
+          <p>I develop and deliver instruction that builds both conceptual understanding and procedural fluency, with a particular focus on K–12 standards alignment, test preparation, and college-readiness.</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">📊</span>
+          <h3>Teaching & Facilitation</h3>
+          <p>I deliver instruction in both live and online settings for small-group, one-on-one, and cohort-based courses. My approach emphasizes strategy, structure, and building learner confidence alongside content mastery.</p>
+        </div>
       </div>
 
-      <p class="section-label">Skills</p>
+      <p class="section-label">Background</p>
 
-      <div class="skills-grid-3">
-        <div class="skills-group">
-          <div class="skills-group-label">Instructional Design</div>
-          <div class="skills-pills">
-            <span class="skill-pill">Curriculum Development</span>
-            <span class="skill-pill">Instructional Design</span>
-            <span class="skill-pill">Assessment Writing</span>
-            <span class="skill-pill">Learning Objectives</span>
-            <span class="skill-pill">Adult Learning</span>
-            <span class="skill-pill">Online Instruction</span>
-            <span class="skill-pill">Content Sequencing</span>
-            <span class="skill-pill">Remediation</span>
-            <span class="skill-pill">Test Preparation</span>
-          </div>
-        </div>
-        <div class="skills-group">
-          <div class="skills-group-label">Mathematics & STEM</div>
-          <div class="skills-pills">
-            <span class="skill-pill">Algebra &amp; Pre-Calculus</span>
-            <span class="skill-pill">Data Literacy</span>
-            <span class="skill-pill">Statistics</span>
-            <span class="skill-pill">SAT · ACT · MCAT</span>
-            <span class="skill-pill">K–12 Standards</span>
-            <span class="skill-pill">Undergraduate Math</span>
-            <span class="skill-pill">STEM Enrichment</span>
-          </div>
-        </div>
-        <div class="skills-group">
-          <div class="skills-group-label">Tools & Platforms</div>
-          <div class="skills-pills">
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">R</span>
-            <span class="skill-pill">Tableau</span>
-            <span class="skill-pill">Markdown · LaTeX</span>
-            <span class="skill-pill">GitHub Pages</span>
-            <span class="skill-pill">MkDocs</span>
-            <span class="skill-pill">Canvas · Classroom</span>
-            <span class="skill-pill">Canva · Notion</span>
-          </div>
-        </div>
+      <div class="body-text">
+        <p>I've worked across small-group courses, independent curriculum projects, and classroom instruction with a consistent focus on structure, clarity, and learner outcomes.</p>
+        <ul>
+          <li>Designing instructional frameworks for online and hybrid mentor onboarding programs</li>
+          <li>Writing and reviewing K–12 math assessments targeting discrete learning objectives</li>
+          <li>Delivering SAT, ACT, MCAT, and TSI preparation courses for The Princeton Review</li>
+          <li>Building original curricula and problem sets for K–12 and undergraduate mathematics</li>
+        </ul>
+        <p>I hold a Bachelor's degree in Mathematics and bring additional depth in data analysis — Python, SQL, and data visualization — which informs how I think about learner progress and content performance.</p>
       </div>
 
       <div class="contact-strip">
-        <p><strong>Currently available</strong> — open to full-time roles, contracts, and curriculum projects.</p>
+        <p><strong>Currently available</strong> for instructional design contracts, curriculum development, and remote teaching roles.</p>
         <a href="mailto:carina@carinamc.com" class="contact-btn">Get in touch</a>
       </div>
     </div>
 
-    <!-- ── WORK PAGE ── -->
+<!-- ── WORK PAGE ── -->
     <div id="page-work" class="page">
 
       <p class="section-label">Portfolio</p>
 
-      <div class="body-text" style="margin-bottom:1.5rem;">
-        <p>A selection of curriculum and instructional design work across K–12 mathematics, adult learning, and online course development.</p>
+      <div class="body-text" style="margin-bottom:2rem;">
+        <p>A selection of instructional design, curriculum, and assessment work — each piece reflecting a different context and learner need.</p>
       </div>
-
-      <!-- Design Principles -->
-      <div class="principles-block">
-        <p><strong>My approach:</strong> Good instruction starts with the learner, not the content. Before I think about what to teach, I ask who the learner is, what they already know, and what understanding actually looks like for them.</p>
-        <p>I design for clarity over decoration — visuals and structure should reduce cognitive load, not add to it. And I sequence deliberately, because in technical and mathematical subjects, small wins early create the momentum to tackle harder things later.</p>
-      </div>
-
-      <!-- EXISTING ITEMS -->
 
       <div class="portfolio-item">
         <div class="portfolio-meta">
           <span class="portfolio-tag">Instructional Design</span>
           <span class="portfolio-tag">Onboarding</span>
         </div>
-        <h3>Instructor Onboarding Framework</h3>
-        <p>Designed a complete a competency-based instructional framework for online and hybrid mentor onboarding, including supplemental math preparation resources. Developed the learning architecture, sequenced content modules, and created workbooks aligned to program objectives.</p>
+        <h3>Mentor Onboarding Framework</h3>
+        <p>Designed a complete instructional framework for online and hybrid mentor onboarding, including supplemental math preparation resources. Developed the learning architecture, sequenced content modules, and created workbooks aligned to program objectives.</p>
         <a href="#" class="portfolio-link">View sample</a>
       </div>
 
@@ -962,132 +732,11 @@
         <a href="#" class="portfolio-link">View sample</a>
       </div>
 
-      <!-- NEW ITEMS -->
-
-      <!-- Data Intro Lesson -->
-      <!-- IMAGE: place your slide preview PNG at /public/img/data-lesson-preview.png -->
-      <div class="portfolio-item">
-        <div class="portfolio-item-media">
-          <div>
-            <div class="portfolio-meta">
-              <span class="portfolio-tag">Instructional Design</span>
-              <span class="portfolio-tag">Adult Learning</span>
-              <span class="portfolio-tag">Data Literacy</span>
-            </div>
-            <h3>Understanding Data: An Introductory Lesson</h3>
-            <p>A slide-based lesson for adult learners entering a data science career accelerator — no technical or math background assumed. Rather than jumping into tools, the lesson focuses on a single foundational idea: data has structure, and that structure is meaningful. Learners leave with a shared vocabulary for rows, columns, variables, and observations that anchors every lesson that follows.</p>
-            <a href="#" class="portfolio-link">View sample</a>
-          </div>
-          <!-- Swap src to /public/img/data-lesson-preview.png once uploaded -->
-          <div class="portfolio-thumb-placeholder">Preview<br>coming soon</div>
-        </div>
-      </div>
-
-      <!-- Algebra I Skill Builder -->
-      <div class="portfolio-item">
-        <div class="portfolio-meta">
-          <span class="portfolio-tag">Curriculum Development</span>
-          <span class="portfolio-tag">Mathematics</span>
-          <span class="portfolio-tag">Remediation</span>
-        </div>
-        <h3>Algebra I Skill Builder Series</h3>
-        <p>A modular series of exercise sets designed to identify and remediate gaps in Algebra I skills. Sequenced to isolate individual competencies, the series lets instructors — or self-directed learners — pinpoint exactly where understanding breaks down and target practice accordingly. Built on the premise that Algebra I fluency is a reliable predictor of confidence in every math course that follows.</p>
-        <a href="#" class="portfolio-link">View sample</a>
-      </div>
-
-      <!-- Nursing Textbook (Coming Soon) -->
-      <div class="portfolio-item" style="opacity: 0.75;">
-        <div class="portfolio-meta">
-          <span class="portfolio-tag">Online Textbook</span>
-          <span class="portfolio-tag">Healthcare Education</span>
-          <span class="coming-soon-badge">⏳ Coming Soon</span>
-        </div>
-        <h3>Nursing Dosage Calculations: Online Textbook</h3>
-        <p>A written textbook designed to accompany in-person dosage calculation workshops for nursing students. Currently in development alongside the workshop series it supports — the two are meant to be genuinely integrated, not just parallel resources. Full write-up and sample coming once the workshop series is further along.</p>
-      </div>
-
-      <div class="contact-strip">
-        <p><strong>Want to work together?</strong> I'm open to instructional design contracts, curriculum projects, and remote teaching roles.</p>
-        <a href="mailto:carina@carinamc.com" class="contact-btn">Get in touch</a>
-      </div>
-    </div>
-
-    <!-- ── ABOUT PAGE ── -->
-    <div id="page-about" class="page">
-
-      <p class="section-label">About</p>
-
-      <div class="body-text" style="margin-bottom:2rem;">
-        <p>I'm a curriculum designer and STEM educator with a throughline that has always pointed back to education — whether I was in a classroom, an analytics role, or writing a grant as an undergraduate.</p>
-        <p>My work sits at the intersection of subject-matter depth and instructional craft. A mathematics degree gives me fluency in the content; years of designing, building, and delivering instruction give me fluency in the learner. I've found that both matter equally, and that most learning struggles trace back to a gap in one or the other — content that's technically correct but inaccessible, or delivery that's engaging but imprecise.</p>
-        <p>I'm drawn to contexts where the stakes are real: adult learners making a career transition, high school students whose relationship with math will shape what they believe they're capable of, nursing students who need to calculate dosages correctly. These are learners who don't have the luxury of disengaging, and they deserve instruction designed with the same seriousness they bring to it.</p>
-        <p>Outside the classroom, I've worked as a decision science analyst — which taught me that making a finding clear to someone who didn't ask for it, and getting them to trust it enough to act on it, is its own discipline. That experience lives in how I design now: every visual choice, every sequence decision, every analogy I reach for is in service of the moment when it lands.</p>
-      </div>
-
-      <p class="section-label">Background</p>
-      <div class="body-text" style="margin-bottom:2rem;">
-        <ul>
-          <li>Designing competency-based instructional frameworks for online and hybrid programs</li>
-          <li>Writing and reviewing mathematics assessments targeting discrete learning objectives</li>
-          <li>Delivering SAT, ACT, MCAT, and TSI preparation courses for The Princeton Review</li>
-          <li>Building original curricula and problem sets for secondary and undergraduate mathematics</li>
-          <li>Analyzing operational and consumer data as a decision science analyst in the retail industry</li>
-        </ul>
-      </div>
-
-      <p class="section-label">Experience</p>
-
-      <div class="experience-list">
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div>
-              <div class="experience-role">Curriculum Designer &amp; Instructor</div>
-              <div class="experience-org">Independent / Freelance</div>
-            </div>
-            <div class="experience-date">2020 — Present</div>
-          </div>
-          <p class="experience-desc">Designing and delivering instructional materials for mathematics, data literacy, and STEM subjects across high school and adult learning contexts. Projects include competency-based onboarding frameworks, mathematics assessment item sets, and structured curriculum for test preparation and undergraduate-level content.</p>
-        </div>
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div>
-              <div class="experience-role">SAT · ACT · MCAT · TSI Instructor</div>
-              <div class="experience-org">The Princeton Review</div>
-            </div>
-            <div class="experience-date">2018 — 2022</div>
-          </div>
-          <p class="experience-desc">Delivered small-group and one-on-one test preparation instruction in mathematics and quantitative reasoning. Applied evidence-based practice to help students build both content fluency and test-taking strategy. Consistently high student outcomes in score improvement.</p>
-        </div>
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div>
-              <div class="experience-role">Decision Science Analyst</div>
-              <div class="experience-org">Grocery / Retail Industry</div>
-            </div>
-            <div class="experience-date">2017 — 2019</div>
-          </div>
-          <p class="experience-desc">Analyzed operational and consumer data to support business decisions. A key part of the role involved communicating findings to non-technical stakeholders — translating metrics into meaning and building enough context for leadership to act with confidence.</p>
-        </div>
-
-        <div class="experience-item">
-          <div class="experience-header">
-            <div>
-              <div class="experience-role">Curriculum Designer &amp; Instructor — R for Data Analysis</div>
-              <div class="experience-org">San Antonio Pre-Freshman Engineering Program (PREP-SA)</div>
-            </div>
-            <div class="experience-date">2016 (Undergraduate)</div>
-          </div>
-          <p class="experience-desc">Designed and piloted an original introductory course on data analysis in R for high school students with no prior programming experience. Wrote and secured a $200,000 grant to fund the pilot as a proof-of-concept for future program expansion. The course was well-received and the outcomes supported continued development.</p>
-        </div>
-
-      </div>
-
-      <p class="section-label" style="margin-top:2.5rem;">Education</p>
+      <p class="section-label" style="margin-top:2.5rem;">Tools &amp; Technologies</p>
       <div class="body-text">
-        <p><strong style="color:var(--teal-dark);">B.S.A. in Mathematics</strong> — The University of Texas at Austin. Additional coursework in data analysis and statistics.</p>
+        <p><strong style="color:var(--teal-dark);">Instructional:</strong> Markdown, LaTeX, Google Workspace, Notion, Canva, Loom</p>
+        <p><strong style="color:var(--teal-dark);">Technical:</strong> Python, SQL, Tableau, GitHub Pages</p>
+        <p><strong style="color:var(--teal-dark);">Platforms:</strong> ClassIn, Zoom, Canvas, Google Classroom</p>
       </div>
 
       <div class="contact-strip">
