@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Understanding Data — Carina Mata</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:       #02737A;
+      --teal-dark:  #015459;
+      --teal-mid:   #028090;
+      --teal-light: #E8F4F5;
+      --mint:       #02C39A;
+      --cream:      #F7F3EE;
+      --sand:       #EDE8E0;
+      --charcoal:   #2D3436;
+      --muted:      #636E72;
+      --border:     #D8D0C8;
+      --white:      #FFFFFF;
+      --serif:      'DM Serif Display', Georgia, serif;
+      --sans:       'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      font-weight: 300;
+      background: var(--cream);
+      color: var(--charcoal);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* ── MASTHEAD ── */
+    .masthead {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .back-link {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--teal);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: gap 0.12s, color 0.12s;
+    }
+    .back-link::before { content: "←"; }
+    .back-link:hover { gap: 0.5rem; color: var(--teal-dark); }
+
+    .masthead-divider {
+      color: var(--border);
+      font-size: 1rem;
+    }
+
+    .masthead-title {
+      font-family: var(--serif);
+      font-size: 1.0rem;
+      color: var(--teal-dark);
+    }
+
+    /* ── LAYOUT ── */
+    .content {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+      width: 100%;
+    }
+
+    /* ── PROJECT HEADER ── */
+    .project-header {
+      margin-bottom: 2.5rem;
+      animation: fadeUp 0.45s ease both;
+    }
+
+    .project-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1rem;
+    }
+
+    .portfolio-tag {
+      background: var(--teal-light);
+      color: var(--teal-dark);
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.22rem 0.65rem;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      border: 1px solid rgba(2,115,122,0.12);
+    }
+
+    .project-header h1 {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      color: var(--teal-dark);
+      line-height: 1.12;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-header .lead {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 44ch;
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin: 2.25rem 0 1.1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--teal-light);
+    }
+
+    /* ── WRITE-UP SECTIONS ── */
+    .writeup-section {
+      margin-bottom: 2rem;
+      animation: fadeUp 0.5s ease both;
+    }
+
+    .writeup-section p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--charcoal);
+      margin-bottom: 0.75rem;
+    }
+
+    .writeup-section p:last-child { margin-bottom: 0; }
+
+    /* Insight callout */
+    .insight-block {
+      background: var(--teal-light);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 10px 10px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+    }
+
+    .insight-block p {
+      font-size: 0.93rem;
+      color: var(--charcoal);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .insight-block strong { color: var(--teal-dark); }
+
+    /* Design decisions list */
+    .design-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .design-list li {
+      position: relative;
+      padding-left: 1.4rem;
+      font-size: 0.92rem;
+      color: var(--charcoal);
+      line-height: 1.65;
+    }
+
+    .design-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      top: 0.05rem;
+      color: var(--teal);
+      font-size: 0.78rem;
+    }
+
+    /* ── SLIDESHOW ── */
+    .slideshow-wrap {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(2,115,122,0.10);
+      margin: 1.5rem 0 2rem;
+      animation: fadeUp 0.5s 0.1s ease both;
+    }
+
+    .slide-stage {
+      position: relative;
+      background: #f0f0f0;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .slide-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      pointer-events: none;
+    }
+
+    .slide-img.active { opacity: 1; }
+
+    .slide-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1.25rem;
+      border-top: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .slide-btn {
+      background: var(--teal-light);
+      border: 1px solid rgba(2,115,122,0.15);
+      color: var(--teal-dark);
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.5rem 1.1rem;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      user-select: none;
+    }
+
+    .slide-btn:hover { background: var(--teal); color: var(--white); transform: translateY(-1px); }
+    .slide-btn:disabled { opacity: 0.35; pointer-events: none; }
+
+    .slide-counter {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
+
+    .slide-dots {
+      display: flex;
+      gap: 0.4rem;
+      align-items: center;
+    }
+
+    .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: background 0.18s, transform 0.18s;
+    }
+
+    .dot.active { background: var(--teal); transform: scale(1.4); }
+
+    /* ── REFLECTION BLOCK ── */
+    .reflection-block {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem 1.6rem;
+      box-shadow: 0 2px 8px rgba(2,115,122,0.06);
+    }
+
+    .reflection-block p {
+      font-size: 0.93rem;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 0.6rem;
+    }
+
+    .reflection-block p:last-child { margin-bottom: 0; }
+
+    /* ── CONTACT STRIP ── */
+    .contact-strip {
+      background: var(--teal-dark);
+      border-radius: 14px;
+      padding: 1.65rem 1.8rem;
+      margin-top: 2.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-strip p {
+      color: rgba(255,255,255,0.84);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .contact-strip strong { color: var(--white); }
+
+    .contact-btn {
+      background: var(--mint);
+      color: var(--teal-dark);
+      font-family: var(--sans);
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 100px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.18s, transform 0.12s;
+    }
+
+    .contact-btn:hover { background: var(--white); transform: translateY(-1px); }
+
+    /* ── FOOTER ── */
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .project-header h1 { font-size: 1.7rem; }
+      .contact-strip { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="masthead">
+    <a href="../../../index.html" class="back-link">Back</a>
+    <span class="masthead-divider">·</span>
+    <span class="masthead-title">Carina Mata</span>
+  </header>
+
+  <main class="content">
+
+    <!-- Project Header -->
+    <div class="project-header">
+      <div class="project-meta">
+        <span class="portfolio-tag">Adult learning</span>
+        <span class="portfolio-tag">Data literacy</span>
+        <span class="portfolio-tag">Lesson design</span>
+      </div>
+      <h1>Understanding Data:<br>An Introductory Lesson</h1>
+      <p class="lead">
+        A slide-based lesson for adult career-changers entering a data program — built to establish shared vocabulary before any tool or technique is introduced.
+      </p>
+    </div>
+
+    <!-- The Gap -->
+    <p class="section-label">The Gap</p>
+    <div class="writeup-section">
+      <p>
+        Career-changers entering a data program often arrive with enthusiasm and some tool exposure, but without a shared vocabulary for talking about data itself. In practice this showed up in a specific and consistent way: students were selecting statistical tests and visualizations that weren't appropriate for their data types. They could operate tools, but they couldn't reason about what the tools should be doing.
+      </p>
+      <p>
+        A compounding factor: the curriculum had been built without formative checks, so misconceptions weren't surfacing until students were already applying tools incorrectly. By the time errors appeared, they were downstream of the real problem.
+      </p>
+    </div>
+
+    <!-- The Diagnosis -->
+    <p class="section-label">The Diagnosis</p>
+    <div class="writeup-section">
+      <div class="insight-block">
+        <p>The root cause wasn't a gap in tool skills — it was a gap <strong>one level upstream</strong>. Without a reliable way to classify and describe data, students had no principled basis for any downstream decision. They were making choices by pattern-matching to examples rather than understanding the logic. No amount of additional tool instruction would fix that.</p>
+      </div>
+    </div>
+
+    <!-- The Approach -->
+    <p class="section-label">The Approach</p>
+    <div class="writeup-section">
+      <p>
+        I redesigned the lesson to establish a shared vocabulary before introducing any software or technique. The core sequence:
+      </p>
+      <ul class="design-list">
+        <li>Anchor the lesson to a single core idea: a dataset is organized information with structure.</li>
+        <li>Introduce the Iris dataset as a running example — chosen deliberately because it contains both numerical and categorical variables in the same table, setting up the classification distinctions that follow.</li>
+        <li>Define variable and observation using consistent color-coded highlights on the same table, so learners see the same data from two structural angles.</li>
+        <li>Classify data types (numerical vs. categorical, then ordinal vs. nominal) and connect each classification to the decisions it enables.</li>
+        <li>Close with a discussion prompt — a smoking habits variable represented two ways — that asks learners to reason about how representation affects downstream use. This is the formative check the original curriculum was missing.</li>
+      </ul>
+      <p>
+        Pacing was managed through Beamer reveals, so each concept landed before the next was introduced. The goal throughout was to give students a reliable first question to ask when facing any unfamiliar dataset: <em>what kind of data is this, and what does that tell me about what I can do with it?</em>
+      </p>
+    </div>
+
+    <!-- Slide Viewer -->
+    <p class="section-label">The Lesson</p>
+    <div class="slideshow-wrap">
+      <div class="slide-stage" id="slideStage">
+        <img class="slide-img active" src="slides/slide_1.png" alt="Slide 1" />
+        <img class="slide-img" src="slides/slide_2.png" alt="Slide 2" />
+        <img class="slide-img" src="slides/slide_3.png" alt="Slide 3" />
+        <img class="slide-img" src="slides/slide_4.png" alt="Slide 4" />
+        <img class="slide-img" src="slides/slide_5.png" alt="Slide 5" />
+        <img class="slide-img" src="slides/slide_6.png" alt="Slide 6" />
+      </div>
+      <div class="slide-controls">
+        <button class="slide-btn" id="prevBtn" onclick="changeSlide(-1)" disabled>← Prev</button>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+          <span class="slide-counter" id="slideCounter">1 / 6</span>
+          <div class="slide-dots" id="dotContainer"></div>
+        </div>
+        <button class="slide-btn" id="nextBtn" onclick="changeSlide(1)">Next →</button>
+      </div>
+    </div>
+
+    <!-- Next Iteration -->
+    <p class="section-label">Next Iteration</p>
+    <div class="writeup-section">
+      <div class="reflection-block">
+        <p>
+          I'd add a short diagnostic at the start — a few examples where students classify data and justify their choice before the lesson begins. That would surface misconceptions earlier and give a clearer picture of where each student is starting from.
+        </p>
+        <p>
+          More broadly, this lesson was one part of a larger response to a curriculum that lacked formative structure throughout. The discussion prompt at the end is a step in that direction — but integrating checks for understanding at each stage of the vocabulary sequence would make the design more complete.
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-strip">
+      <p><strong>Want to see more?</strong> I can share additional samples tailored to a specific role or context.</p>
+      <a href="mailto:carina@carinamc.com" class="contact-btn">Get in touch</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">© 2026 Carina Mata</footer>
+
+  <script>
+    let current = 0;
+    const slides = document.querySelectorAll('.slide-img');
+    const total = slides.length;
+    const counter = document.getElementById('slideCounter');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const dotContainer = document.getElementById('dotContainer');
+
+    // Build dots
+    slides.forEach((_, i) => {
+      const dot = document.createElement('div');
+      dot.className = 'dot' + (i === 0 ? ' active' : '');
+      dot.onclick = () => goTo(i);
+      dotContainer.appendChild(dot);
+    });
+
+    function goTo(n) {
+      slides[current].classList.remove('active');
+      dotContainer.children[current].classList.remove('active');
+      current = n;
+      slides[current].classList.add('active');
+      dotContainer.children[current].classList.add('active');
+      counter.textContent = (current + 1) + ' / ' + total;
+      prevBtn.disabled = current === 0;
+      nextBtn.disabled = current === total - 1;
+    }
+
+    function changeSlide(dir) {
+      const next = current + dir;
+      if (next >= 0 && next < total) goTo(next);
+    }
+
+    // Keyboard navigation
+    document.addEventListener('keydown', e => {
+      if (e.key === 'ArrowRight') changeSlide(1);
+      if (e.key === 'ArrowLeft') changeSlide(-1);
+    });
+  </script>
+
+</body>
+</html>
