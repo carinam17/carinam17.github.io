@@ -198,7 +198,7 @@
     /* ── SLIDESHOW ── */
     .slideshow-wrap {
       background: var(--white);
-      border: 1px solid var(--border);
+      border: 2px solid var(--border);
       border-radius: 16px;
       overflow: hidden;
       box-shadow: 0 4px 24px rgba(2,115,122,0.10);
@@ -208,7 +208,8 @@
 
     .slide-stage {
       position: relative;
-      background: #f0f0f0;
+      background: #e8e8e8;
+      box-shadow: inset 0 2 px 8px rgba(0, 0, 0, 0,06);
       aspect-ratio: 16 / 9;
       overflow: hidden;
     }
@@ -231,18 +232,18 @@
       align-items: center;
       justify-content: space-between;
       padding: 0.85rem 1.25rem;
-      border-top: 1px solid var(--border);
-      background: var(--white);
+      border-top: 2px solid var(--teal-light);
+      background: var(--sand);
     }
 
-    .slide-btn {
+    .slide-btn {ß
       background: var(--teal-light);
       border: 1px solid rgba(2,115,122,0.15);
       color: var(--teal-dark);
       font-family: var(--sans);
       font-size: 0.82rem;
       font-weight: 700;
-      padding: 0.5rem 1.1rem;
+      padding: 0.6rem 1.4rem;
       border-radius: 100px;
       cursor: pointer;
       transition: background 0.15s, transform 0.1s;
@@ -255,8 +256,8 @@
     .slide-counter {
       font-family: var(--sans);
       font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--muted);
+      font-weight: 700;
+      color: var(--teal-dark);
     }
 
     .slide-dots {
