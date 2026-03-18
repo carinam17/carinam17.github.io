@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carina Mata — Curriculum & Instructional Design</title>
+  <title>Carina Mata — Curriculum & Learning Design</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
@@ -17,12 +17,14 @@
       --teal-mid:   #028090;
       --teal-light: #E8F4F5;
       --mint:       #02C39A;
+
       --cream:      #F7F3EE;
       --sand:       #EDE8E0;
       --charcoal:   #2D3436;
       --muted:      #636E72;
       --border:     #D8D0C8;
       --white:      #FFFFFF;
+
       --serif:      'DM Serif Display', Georgia, serif;
       --sans:       'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     }
@@ -330,11 +332,6 @@
       gap: 1.1rem;
       margin-bottom: 2.0rem;
       animation: fadeUp 0.5s 0.08s ease both;
-    }
-
-    /* Third card spans full width on its own row */
-    .feature-card.full-width {
-      grid-column: 1 / -1;
     }
 
     .feature-card {
@@ -670,7 +667,6 @@
     /* ── RESPONSIVE ── */
     @media (max-width: 820px) {
       .feature-grid { grid-template-columns: 1fr; }
-      .feature-card.full-width { grid-column: auto; }
     }
 
     @media (max-width: 640px) {
@@ -687,14 +683,14 @@
 
 <!-- Sidebar -->
 <aside class="sidebar" aria-label="Site navigation">
-  <a href="#" class="sidebar-brand" onclick="showPage('home'); return false;">
+  <a href="#" class="sidebar-brand" onclick="showPage('home'); setActive(this); return false;">
     Carina Mata
     <small>Curriculum & Learning Design</small>
   </a>
   <nav>
-    <a href="#" class="active" onclick="showPage('home'); return false;">Home</a>
-    <a href="#" onclick="showPage('work'); return false;">Work</a>
-    <a href="#" onclick="showPage('about'); return false;">About</a>
+    <a href="#" class="active" onclick="showPage('home'); setActive(this); return false;">Home</a>
+    <a href="#" onclick="showPage('work'); setActive(this); return false;">Work</a>
+    <a href="#" onclick="showPage('about'); setActive(this); return false;">About</a>
   </nav>
   <div class="sidebar-footer">© 2026 Carina Mata</div>
 </aside>
@@ -717,9 +713,9 @@
   <main class="content">
     <!-- Page tabs -->
     <div class="page-tabs" role="tablist" aria-label="Pages">
-      <a class="page-tab active" role="tab" aria-selected="true"  data-page="home"  onclick="showPage('home'); return false;">Home</a>
-      <a class="page-tab"        role="tab" aria-selected="false" data-page="work"  onclick="showPage('work'); return false;">Work</a>
-      <a class="page-tab"        role="tab" aria-selected="false" data-page="about" onclick="showPage('about'); return false;">About</a>
+      <a class="page-tab active" role="tab" aria-selected="true" onclick="showPage('home'); setActiveTab(this); return false;">Home</a>
+      <a class="page-tab" role="tab" aria-selected="false" onclick="showPage('work'); setActiveTab(this); return false;">Work</a>
+      <a class="page-tab" role="tab" aria-selected="false" onclick="showPage('about'); setActiveTab(this); return false;">About</a>
     </div>
 
     <!-- ── HOME ── -->
@@ -739,56 +735,72 @@
         </div>
 
         <div class="hero-cta-row">
-          <a href="#" class="hero-cta" onclick="showPage('work'); return false;">View selected work</a>
-          <a href="mailto:carina@carinamc.com" class="hero-cta secondary">Contact</a>
+          <a href="#" class="hero-cta" onclick="showPage('work'); setActiveTab(document.querySelectorAll('.page-tab')[1]); setActive(document.querySelectorAll('.sidebar nav a')[1]); return false;">
+            View selected work
+          </a>
+          <a href="mailto:carina@carinamc.com" class="hero-cta secondary">
+            Contact
+          </a>
         </div>
       </div>
 
       <p class="section-label first">Selected work</p>
 
       <div class="feature-grid">
-        <!-- Card 1: Understanding Data -->
+        <!-- Featured A: DataCamp-leaning -->
         <article class="feature-card">
           <div class="feature-meta">
             <span class="chip">Adult learning</span>
+            <span class="chip">Learning architecture</span>
             <span class="chip">Data literacy</span>
-            <span class="chip">Lesson design</span>
           </div>
+
           <h3>Intro to Data: Shared Vocabulary Lesson</h3>
           <p>
-            A lesson for adult career-changers entering a data program—built to establish shared vocabulary before any tool or technique is introduced.
+            A lesson designed for adult learners entering technical training without a math/programming background.
+            The goal is to create a reliable foundation for everything that follows.
           </p>
+
           <ul class="feature-bullets">
-            <li>Anchored to a single core idea and sequenced supporting concepts around it.</li>
-            <li>Checks for understanding that distinguish vocabulary recall from conceptual interpretation.</li>
-            <li>Designed to reduce downstream confusion in later tooling-focused modules.</li>
+            <li>Defined a single “anchor concept” (data has structure) and sequenced supporting terms around it.</li>
+            <li>Built checks for understanding that distinguish vocabulary recall from conceptual interpretation.</li>
+            <li>Designed the lesson to reduce downstream confusion in later tooling-focused modules.</li>
           </ul>
-          <a href="work/understanding-data/" class="feature-link">View lesson</a>
+
+          <a href="#" class="feature-link" onclick="showPage('work'); setActiveTab(document.querySelectorAll('.page-tab')[1]); setActive(document.querySelectorAll('.sidebar nav a')[1]); return false;">
+            See related work
+          </a>
         </article>
 
-        <!-- Card 2: Desmos Guide -->
+        <!-- Featured B: Brilliant-leaning -->
         <article class="feature-card">
           <div class="feature-meta">
-            <span class="chip">Test prep</span>
-            <span class="chip">Tool fluency</span>
-            <span class="chip">Decision-making</span>
+            <span class="chip">Math concepts</span>
+            <span class="chip">Interactive design</span>
+            <span class="chip">Cognitive clarity</span>
           </div>
-          <h3>How and When to Use Desmos on the SAT</h3>
+
+          <h3>Interactive Math Models (Prototype Series)</h3>
           <p>
-            A student-facing reference guide that teaches when the graphing calculator is the right tool—not just how to use it.
+            Small interactive prototypes that turn abstract ideas into something learners can manipulate and test.
+            The emphasis is on insight, not decoration.
           </p>
+
           <ul class="feature-bullets">
-            <li>Side-by-side algebraic vs. calculator paths for five common question types.</li>
-            <li>Frames the tool as a decision based on each student's own algebra proficiency.</li>
-            <li>Designed for tutoring students preparing for the Digital SAT.</li>
+            <li>Translated abstract transformations into visible actions learners can replay and compare.</li>
+            <li>Used constrained interfaces to guide discovery while preserving student agency.</li>
+            <li>Structured “micro-challenges” to prompt reflection and self-checking.</li>
           </ul>
-          <a href="work/sat-desmos-guide/" class="feature-link">View guide</a>
+
+          <a href="#" class="feature-link" onclick="showPage('work'); setActiveTab(document.querySelectorAll('.page-tab')[1]); setActive(document.querySelectorAll('.sidebar nav a')[1]); return false;">
+            View prototypes
+          </a>
         </article>
       </div>
 
       <p class="section-label">How I design</p>
       <div class="principles">
-        <p><strong>Start with the learner's next reliable move.</strong> In technical subjects, momentum matters—early wins should be real, not shallow.</p>
+        <p><strong>Start with the learner’s next reliable move.</strong> In technical subjects, momentum matters—early wins should be real, not shallow.</p>
         <p><strong>Sequence for understanding.</strong> I prioritize dependencies and misconceptions so practice builds fluency instead of reinforcing gaps.</p>
         <p><strong>Assess to create feedback, not just scores.</strong> Checks for understanding are designed to reveal what to do next—for the learner and the instructor.</p>
       </div>
@@ -805,11 +817,50 @@
 
       <div class="body-text" style="margin-bottom:1.25rem;">
         <p>
-          A selection of curriculum and instructional design work across math education, adult learning, and technical training.
+          A small selection of curriculum and instructional design work across math education, adult learning, and technical training.
+          (Samples can link to PDFs, slide decks, or short write-ups.)
         </p>
       </div>
 
-      <!-- Live items -->
+      <div class="portfolio-item">
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Instructional design</span>
+          <span class="portfolio-tag">Onboarding</span>
+          <span class="portfolio-tag">Framework</span>
+        </div>
+        <h3>Instructor Onboarding Framework</h3>
+        <p>
+          Competency-based onboarding for online/hybrid instruction, including a scaffolded support layer and materials aligned to program objectives.
+        </p>
+        <a href="#" class="portfolio-link">View sample</a>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Assessment writing</span>
+          <span class="portfolio-tag">K–12 math</span>
+          <span class="portfolio-tag">Rubrics</span>
+        </div>
+        <h3>Mathematics Assessment Item Set</h3>
+        <p>
+          Original item sets spanning elementary through pre-calculus topics, designed around discrete objectives and increasing challenge levels.
+        </p>
+        <a href="#" class="portfolio-link">View sample</a>
+      </div>
+
+      <div class="portfolio-item">
+        <div class="portfolio-meta">
+          <span class="portfolio-tag">Curriculum development</span>
+          <span class="portfolio-tag">Test prep</span>
+          <span class="portfolio-tag">Sequencing</span>
+        </div>
+        <h3>SAT/ACT Math Curriculum Guide</h3>
+        <p>
+          Structured guide covering domains, common misconceptions, and scaffolded practice sequences for small-group instruction.
+        </p>
+        <a href="#" class="portfolio-link">View sample</a>
+      </div>
+
       <div class="portfolio-item">
         <div class="portfolio-meta">
           <span class="portfolio-tag">Adult learning</span>
@@ -820,24 +871,23 @@
         <p>
           Slide-based lesson for adults entering data training with no technical background—focuses on structure, vocabulary, and interpretation.
         </p>
-        <a href="work/understanding-data/" class="portfolio-link">View sample</a>
+        <a href="#" class="portfolio-link">View sample</a>
       </div>
 
       <div class="portfolio-item">
         <div class="portfolio-meta">
-          <span class="portfolio-tag">Test prep</span>
-          <span class="portfolio-tag">Tool fluency</span>
-          <span class="portfolio-tag">Decision-making</span>
+          <span class="portfolio-tag">Mathematics</span>
+          <span class="portfolio-tag">Remediation</span>
+          <span class="portfolio-tag">Practice design</span>
         </div>
-        <h3>How and When to Use Desmos on the SAT</h3>
+        <h3>Algebra I Skill Builder Series</h3>
         <p>
-          Student-facing reference guide that teaches when the graphing calculator is the right tool for a given SAT question—framed around each student's algebra proficiency.
+          Modular exercise sets that isolate competencies, diagnose gaps, and target practice—designed for instructors or self-directed learners.
         </p>
-        <a href="work/sat-desmos-guide/" class="portfolio-link">View sample</a>
+        <a href="#" class="portfolio-link">View sample</a>
       </div>
 
-      <!-- Coming soon -->
-      <div class="portfolio-item" style="opacity:0.72;">
+      <div class="portfolio-item" style="opacity:0.78;">
         <div class="portfolio-meta">
           <span class="portfolio-tag">Healthcare education</span>
           <span class="portfolio-tag">Online textbook</span>
@@ -861,11 +911,11 @@
 
       <div class="body-text" style="margin-bottom:1.6rem;">
         <p>
-          I'm a curriculum designer and STEM educator focused on helping learners succeed in high-friction topics—math, data, and technical reasoning.
+          I’m a curriculum designer and STEM educator focused on helping learners succeed in high-friction topics—math, data, and technical reasoning.
           My work blends subject-matter depth with deliberate instructional structure.
         </p>
         <p>
-          I've designed and delivered instruction across adult upskilling, test prep, and mathematics—plus time in industry as a decision science analyst,
+          I’ve designed and delivered instruction across adult upskilling, test prep, and mathematics—plus time in industry as a decision science analyst,
           where communicating meaning to non-technical stakeholders was part of the job.
         </p>
       </div>
@@ -933,26 +983,20 @@
 
 <script>
   function showPage(id) {
-    // Hide all pages
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-    // Show target page
     const page = document.getElementById('page-' + id);
     if (page) page.classList.add('active');
-
-    // Sync tabs
-    document.querySelectorAll('.page-tab').forEach(t => {
-      t.classList.toggle('active', t.dataset.page === id);
-      t.setAttribute('aria-selected', t.dataset.page === id);
-    });
-
-    // Sync sidebar links
-    const sidebarLinks = document.querySelectorAll('.sidebar nav a');
-    const pageOrder = ['home', 'work', 'about'];
-    const idx = pageOrder.indexOf(id);
-    sidebarLinks.forEach((a, i) => a.classList.toggle('active', i === idx));
-
-    // Close sidebar
     document.getElementById('sidebar-checkbox').checked = false;
+  }
+
+  function setActive(el) {
+    document.querySelectorAll('.sidebar nav a').forEach(a => a.classList.remove('active'));
+    if (el) el.classList.add('active');
+  }
+
+  function setActiveTab(el) {
+    document.querySelectorAll('.page-tab').forEach(t => t.classList.remove('active'));
+    if (el) el.classList.add('active');
   }
 </script>
 </body>
