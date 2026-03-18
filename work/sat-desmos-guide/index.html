@@ -206,8 +206,28 @@
     .slide-stage {
       position: relative;
       background: #f0f0f0;
-      aspect-ratio: 16 / 9;
+      aspect-ratio: 8.5 / 11;
       overflow: hidden;
+      cursor: pointer;
+    }
+
+    .slide-stage:hover .slide-zoom-hint { opacity: 1; }
+
+    .slide-zoom-hint {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      background: rgba(0,0,0,0.45);
+      color: #fff;
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.3rem 0.7rem;
+      border-radius: 100px;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+      pointer-events: none;
+      z-index: 2;
     }
 
     .slide-img {
@@ -222,6 +242,21 @@
     }
 
     .slide-img.active { opacity: 1; }
+
+    .slide-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--teal);
+      text-decoration: none;
+      margin: 0.25rem 0 1.75rem;
+      transition: color 0.15s, gap 0.15s;
+    }
+    .slide-download:hover { color: var(--teal-dark); gap: 0.6rem; }
+    .slide-download::before { content: "↓"; }
 
     .slide-controls {
       display: flex;
@@ -405,10 +440,11 @@
     <!-- The Guide -->
     <p class="section-label">The Guide</p>
     <div class="slideshow-wrap">
-      <div class="slide-stage" id="slideStage">
+      <div class="slide-stage" id="slideStage" onclick="openCurrent()">
         <img class="slide-img active" src="slides/slide-0.png" alt="Page 1" />
         <img class="slide-img" src="slides/slide-1.png" alt="Page 2" />
         <img class="slide-img" src="slides/slide-2.png" alt="Page 3" />
+        <span class="slide-zoom-hint">Click to open full size</span>
       </div>
       <div class="slide-controls">
         <button class="slide-btn" id="prevBtn" onclick="changeSlide(-1)" disabled>← Prev</button>
@@ -419,6 +455,7 @@
         <button class="slide-btn" id="nextBtn" onclick="changeSlide(1)">Next →</button>
       </div>
     </div>
+    <a class="slide-download" href="slides/desmos-sat-guide.pdf" download>Download PDF</a>
 
     <!-- Next Iteration -->
     <p class="section-label">Next Iteration</p>
@@ -433,16 +470,19 @@
       </div>
     </div>
 
-    <div class="contact-strip">
-      <p><strong>Want to see more?</strong> I can share additional samples tailored to a specific role or context.</p>
-      <a href="mailto:carina@carinamc.com" class="contact-btn">Get in touch</a>
-    </div>
+    <div class="contact-strip" style="display:none"></div>
 
   </main>
 
   <footer class="footer">© 2026 Carina Mata</footer>
 
   <script>
+    const slideSrcs = [
+      'slides/slide-0.png',
+      'slides/slide-1.png',
+      'slides/slide-2.png'
+    ];
+
     let current = 0;
     const slides = document.querySelectorAll('.slide-img');
     const total = slides.length;
@@ -472,6 +512,10 @@
     function changeSlide(dir) {
       const next = current + dir;
       if (next >= 0 && next < total) goTo(next);
+    }
+
+    function openCurrent() {
+      window.open(slideSrcs[current], '_blank');
     }
 
     document.addEventListener('keydown', e => {
