@@ -23,6 +23,7 @@
       --muted:      #636E72;
       --border:     #D8D0C8;
       --white:      #FFFFFF;
+      --card-bg:    #FAF9F7;
       --serif:      'DM Serif Display', Georgia, serif;
       --sans:       'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     }
@@ -312,7 +313,7 @@
     /* ── SECTION LABEL ── */
     .section-label {
       font-family: var(--sans);
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       font-weight: 800;
       letter-spacing: 0.16em;
       text-transform: uppercase;
@@ -321,13 +322,21 @@
       padding-bottom: 0.5rem;
       border-bottom: 2px solid var(--teal-light);
     }
+
     .section-label.first { margin-top: 0; }
+
+    .section-label.on-dark {
+      color: rgba(255, 255, 255, 0.95);
+      border-bottom-color: rgba(255, 255, 255, 0.3);
+    }
+
+
 
     /* ── FEATURED WORK ── */
     .feature-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1.1rem;
+      gap: 1.6rem;
       margin-bottom: 2.0rem;
       animation: fadeUp 0.5s 0.08s ease both;
     }
@@ -338,7 +347,7 @@
     }
 
     .feature-card {
-      background: var(--white);
+      background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 1.5rem 1.4rem;
@@ -450,7 +459,7 @@
 
     /* ── WORK ITEMS ── */
     .portfolio-item {
-      background: var(--white);
+      background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 1.7rem;
@@ -725,34 +734,23 @@
     <!-- ── HOME ── -->
     <section id="page-home" class="page active" role="tabpanel">
       <div class="hero">
-        <p class="hero-eyebrow">Instructional Design · Math Educationh</p>
-        <h1>Learning experiences<br><em>built to work.</em></h1>
+        <p class="hero-eyebrow">Instructional Design · Math Education</p>
+        <h1>Learning experiences<br><em>built around the learner.</em></h1>
         <p class="hero-sub">
-          I design outcome-driven learning experiences.
+        I start with who's learning, then build everything else.
         </p>
 
         <div class="hero-tags" aria-label="Focus areas">
           <span class="hero-tag">Learning outcomes</span>
           <span class="hero-tag">Concept sequencing</span>
-          <span class="hero-tag">Assessment design</span>
-          <span class="hero-tag">Interactive explanations</span>
+          <span class="hero-tag">Mathematical representation</span>
+          <span class="hero-tag">Interactive tools</span>
         </div>
 
+    <p class="section-label first on-dark">Selected work</p>
 
-
-<!---
-        <div class="hero-cta-row">
-          <a href="#" class="hero-cta" onclick="showPage('work'); return false;">View selected work</a>
-          <a href="mailto:carina@carinamc.com" class="hero-cta secondary">Contact</a>
-        </div>
-      </div>
-
---->
-
-      <p class="section-label first">Selected work</p>
-
-
-    <!-- Card: Visualizing Functions -->
+    <!-- Full Card: Visualizing Functions -->
+    <div class="feature-grid">
     <article class="feature-card full-width">
       <div class="feature-meta">
         <span class="chip">Math Content</span>
@@ -772,11 +770,30 @@
     </article>
 
 
+      <!-- Full Card: Math Foundations for Nursing -->
+      <article class="feature-card full-width">
+        <div class="feature-meta">
+          <span class="chip">Healthcare Education</span>
+          <span class="chip">Interactive Design</span>
+          <span class="chip">Outcome-First</span>
+        </div>
+        <h3>Math Foundations for Nursing: Textbook & Interactive Practice</h3>
+        <p>
+      <p>
+        The biggest barrier in dosage calculation instruction isn't comprehension. It is closing the gap between reading a worked example and writing something down to complete the calcution. This  online 
+        textbook is organized by question type and paired with an interactive dimensional 
+        analysis tool built in Python.
+      </p>
+        </p>
+        <ul class="feature-bullets">
+          <li>Textbook sequenced outcome-first — each module is organized around what students need to do, not just what they need to know.</li>
+          <li>Interactive practice tool built from scratch in Python and deployed to the browser via WebAssembly — drag-and-drop factor chains with live unit cancellation feedback.</li>
+          <li>Designed to support a live virtual workshop delivery model for workforce development cohorts.</li>
+        </ul>
+        <a href="https://nursing.convergentmath.com" class="feature-link" target="_blank">View textbook & tool</a>
+      </article>
 
-
-
-      <div class="feature-grid">
-        <!-- Card 1: Understanding Data -->
+        <!-- Half Card: Understanding Data -->
         <article class="feature-card">
           <div class="feature-meta">
             <span class="chip">Adult learning</span>
@@ -785,7 +802,7 @@
           </div>
           <h3>Intro to Data: Shared Vocabulary Lesson</h3>
           <p>
-            A lesson for adult career-changers entering a data science program program—built to establish shared vocabulary before any tool or technique is introduced.
+            A lesson for adult career-changers entering a data science program, designed to establish shared vocabulary before any tool or technique is introduced.
           </p>
           <ul class="feature-bullets">
             <li>Anchored to a single core idea and sequenced supporting concepts around it.</li>
@@ -795,7 +812,8 @@
           <a href="work/understanding-data/" class="feature-link">View lesson</a>
         </article>
 
-        <!-- Card 2: Desmos Guide -->
+
+        <!-- Half Card: Desmos Guide -->
         <article class="feature-card">
           <div class="feature-meta">
             <span class="chip">Test Prep</span>
@@ -814,19 +832,19 @@
           <a href="work/sat-desmos-guide/" class="feature-link">View guide</a>
         </article>
       </div>
-
-      <p class="section-label">How I design</p>
+      </div>
+      <p class="section-label on-dark">How I design</p>
+      
       <div class="principles">
-        <p><strong>Start with the learner's next reliable move.</strong> In technical subjects, momentum matters—early wins should be real, not shallow.</p>
+        <p><strong>Start with the learner's next reliable move.</strong> In technical subjects, early momentum matters.</p>
         <p><strong>Sequence for understanding.</strong> I prioritize dependencies and misconceptions so practice builds fluency instead of reinforcing gaps.</p>
-        <p><strong>Assess to create feedback, not just scores.</strong> Checks for understanding are designed to reveal what to do next—for the learner and the instructor.</p>
+        <p><strong>Assess to create feedback, not just scores.</strong> Checks for understanding are designed to reveal what to do next, both for the learner and the instructor.</p>
       </div>
 
       <div class="contact-strip">
-        <p><strong>Open to roles in curriculum design, content creation, and math and technical instruction.
+        <p><strong>Open to roles in curriculum design, content creation, and math and technical instruction.</strong></p>
       </div>
     </section>
-
 
 
     <!-- ── WORK ── -->
@@ -884,8 +902,9 @@
       </div>
 
 
+
       <!-- Nursing Calculations Course -->
-      <div class="portfolio-item" style="opacity:0.72;">
+      <div class="portfolio-item">
         <div class="portfolio-meta">
           <span class="portfolio-tag">Healthcare Education</span>
           <span class="portfolio-tag">Interactive Design</span>
@@ -893,8 +912,8 @@
         </div>
         <h3>Math Foundations for Nursing: Textbook & Interactive Practice</h3>
         <p>
-          For many learners, biggest barrier in dosage calculation instruction isn't comprehension, it's 
-          the gap between reading a worked example and writing anything down. This resource 
+          The biggest barrier in dosage calculation instruction isn't comprehension, it's 
+          closing the gap between reading a worked example and writing anything down. This resource 
           addresses that directly: an online textbook organized by question type paired with 
           an interactive dimensional analysis tool where students build conversion chains 
           by dragging and dropping number and unit cards before committing to paper and pencil.
@@ -919,15 +938,27 @@
           I'm a math-focused instructional designer and curriculum developer, who specializes in the subjects where clear sequencing and precise representation matter most: mathematics, quantitative reasoning, and technical content.
         </p>
       <p>
-        I've designed and delivered instruction across K–12 math, undergraduate math, test preparation, and adult 
-        upskilling. My time in industry as a decision science analyst further honed my ability to translate 
-        quantitative findings for non-technical audiences and enable strategic merchandizing decisions. I bring the 
-        same standard to editorial work on mathematical content. Notation should be 
-        unambiguous, representations should earn their place, and every design decision 
-        should reduce load on the reader. When a static diagram isn't enough, I can build 
-        interactive tools from scratch.
+     <p>
+  I've designed and delivered instruction across K–12 math, undergraduate mathematics, 
+  test preparation, and adult upskilling. Time in industry as a decision science analyst 
+  sharpened my ability to translate quantitative work for non-technical audiences — 
+  a standard I bring to everything I design. Notation should be unambiguous, 
+  representations should earn their place, and every design decision should reduce 
+  load on the reader. When a static diagram isn't enough, I build interactive tools 
+  from scratch.
+</p>
       </p>
       </div>
+
+<p>
+
+  I serve on the board of a Latina-focused digital tech literacy nonprofit as a bilingual 
+  tech advisor. This community work connects directly to my interest in making technical 
+  content accessible to learners who have historically been underserved by it. Outside of work,  I am a dedicated guitarist who primarily performs fingerstyle and classical repertoire. 
+</p>
+
+
+
 
       <p class="section-label">Education</p>
       <div class="degree-line" aria-label="Education">
@@ -971,6 +1002,7 @@
             <span class="skill-pill">Python</span>
             <span class="skill-pill">SQL</span>
             <span class="skill-pill">R</span>
+            <span class="skill-pill">Databricks</span>
             <span class="skill-pill">Data literacy</span>
             <span class="skill-pill">Tableau</span>
           </div>
@@ -984,7 +1016,6 @@
             <span class="skill-pill">GitHub Pages</span>
             <span class="skill-pill">MkDocs</span>
             <span class="skill-pill">LMS: Canvas, Moodle</span>
-            <span class="skill-pill">pygame / Pygbag</span>
           </div>
         </div>
       </div>
