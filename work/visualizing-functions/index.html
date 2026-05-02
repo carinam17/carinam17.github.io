@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Function of Color: Rethinking How Functions Are Introduced</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:       #02737A;
+      --teal-dark:  #015459;
+      --teal-mid:   #028090;
+      --teal-light: #E8F4F5;
+      --mint:       #02C39A;
+      --cream:      #F7F3EE;
+      --sand:       #EDE8E0;
+      --charcoal:   #2D3436;
+      --muted:      #636E72;
+      --border:     #D8D0C8;
+      --white:      #FFFFFF;
+      --serif:      'DM Serif Display', Georgia, serif;
+      --sans:       'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    html { font-size: 16px; scroll-behavior: smooth; }
+    body {
+      font-family: var(--sans);
+      font-weight: 300;
+      background: var(--cream);
+      color: var(--charcoal);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    .masthead {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .back-link {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--teal);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: gap 0.12s, color 0.12s;
+    }
+    .back-link::before { content: "←"; }
+    .back-link:hover { gap: 0.5rem; color: var(--teal-dark); }
+
+    .masthead-divider { color: var(--border); font-size: 1rem; }
+    .masthead-title { font-family: var(--serif); font-size: 1.0rem; color: var(--teal-dark); }
+
+    .content {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 5rem;
+      width: 100%;
+    }
+
+    .project-header { margin-bottom: 2.5rem; animation: fadeUp 0.45s ease both; }
+
+    .project-meta { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-bottom: 1rem; }
+
+    .portfolio-tag {
+      background: var(--teal-light);
+      color: var(--teal-dark);
+      font-size: 0.68rem;
+      font-weight: 800;
+      padding: 0.22rem 0.65rem;
+      border-radius: 100px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      border: 1px solid rgba(2,115,122,0.12);
+    }
+
+    .project-header h1 {
+      font-family: var(--serif);
+      font-size: 2.2rem;
+      color: var(--teal-dark);
+      line-height: 1.12;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-header .lead {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 44ch;
+    }
+
+    .section-label {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin: 2.25rem 0 1.1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--teal-light);
+    }
+
+    .writeup-section { margin-bottom: 2rem; animation: fadeUp 0.5s ease both; }
+
+    .writeup-section p {
+      font-size: 0.95rem;
+      line-height: 1.85;
+      color: var(--charcoal);
+      margin-bottom: 0.75rem;
+    }
+
+    .writeup-section p:last-child { margin-bottom: 0; }
+
+    .insight-block {
+      background: var(--teal-light);
+      border-left: 3px solid var(--teal);
+      border-radius: 0 10px 10px 0;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+    }
+
+    .insight-block p {
+      font-size: 0.93rem;
+      color: var(--charcoal);
+      line-height: 1.75;
+      margin: 0;
+    }
+
+    .insight-block strong { color: var(--teal-dark); }
+
+    .design-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+      display: grid;
+      gap: 0.65rem;
+    }
+
+    .design-list li {
+      position: relative;
+      padding-left: 1.4rem;
+      font-size: 0.92rem;
+      color: var(--charcoal);
+      line-height: 1.65;
+    }
+
+    .design-list li::before {
+      content: "▸";
+      position: absolute;
+      left: 0;
+      top: 0.05rem;
+      color: var(--teal);
+      font-size: 0.78rem;
+    }
+
+    .example-section {
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .example-section:last-of-type { border-bottom: none; }
+
+    .example-heading {
+      font-family: var(--serif);
+      font-size: 1.35rem;
+      color: var(--teal-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    /* Placeholder slot */
+    .placeholder-slot {
+      background: var(--sand);
+      border: 2px dashed var(--border);
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+      margin: 1.5rem 0 1rem;
+    }
+
+    .placeholder-slot p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    .slideshow-wrap {
+      background: var(--white);
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(2,115,122,0.10);
+      margin: 1.5rem 0 1rem;
+      animation: fadeUp 0.5s 0.1s ease both;
+    }
+
+    .slide-stage {
+      position: relative;
+      background: #e8e8e8;
+      box-shadow: inset 0 2px 8px rgba(0,0,0,0.06);
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+    }
+
+    .slide-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      opacity: 0;
+      transition: opacity 0.35s ease;
+      pointer-events: none;
+    }
+
+    .slide-img.active { opacity: 1; }
+
+    .slide-controls {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1.25rem;
+      border-top: 2px solid var(--teal-light);
+      background: var(--sand);
+    }
+
+    .slide-btn {
+      background: var(--teal-light);
+      border: 1px solid rgba(2,115,122,0.15);
+      color: var(--teal-dark);
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 0.6rem 1.4rem;
+      border-radius: 100px;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      user-select: none;
+    }
+
+    .slide-btn:hover { background: var(--teal); color: var(--white); transform: translateY(-1px); }
+    .slide-btn:disabled { opacity: 0.35; pointer-events: none; }
+
+    .slide-counter {
+      font-family: var(--sans);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--teal-dark);
+    }
+
+    .slide-dots { display: flex; gap: 0.4rem; align-items: center; }
+
+    .dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: background 0.18s, transform 0.18s;
+    }
+
+    .dot.active { background: var(--teal); transform: scale(1.4); }
+
+    .slide-caption {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    .reflection-block {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem 1.6rem;
+      box-shadow: 0 2px 8px rgba(2,115,122,0.06);
+    }
+
+    .reflection-block p {
+      font-size: 0.93rem;
+      line-height: 1.8;
+      color: var(--charcoal);
+      margin-bottom: 0.6rem;
+    }
+
+    .reflection-block p:last-child { margin-bottom: 0; }
+
+    .contact-strip {
+      background: var(--teal-dark);
+      border-radius: 14px;
+      padding: 1.65rem 1.8rem;
+      margin-top: 2.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-strip p { color: rgba(255,255,255,0.84); font-size: 0.92rem; line-height: 1.55; margin: 0; }
+    .contact-strip strong { color: var(--white); }
+
+    .contact-btn {
+      background: var(--mint);
+      color: var(--teal-dark);
+      font-family: var(--sans);
+      font-weight: 800;
+      font-size: 0.82rem;
+      padding: 0.6rem 1.2rem;
+      border-radius: 100px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.18s, transform 0.12s;
+    }
+
+    .contact-btn:hover { background: var(--white); transform: translateY(-1px); }
+
+    .footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 640px) {
+      .project-header h1 { font-size: 1.7rem; }
+      .contact-strip { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="masthead">
+    <a href="../../../index.html" class="back-link">Back</a>
+    <span class="masthead-divider">·</span>
+    <span class="masthead-title">Carina Mata</span>
+  </header>
+
+  <main class="content">
+
+    <div class="project-header">
+      <div class="project-meta">
+        <span class="portfolio-tag">Math education</span>
+        <span class="portfolio-tag">Editorial</span>
+        <span class="portfolio-tag">Representation design</span>
+      </div>
+      <h1>The Function of Color:<br>Rethinking How Functions Are Introduced</h1>
+      <p class="lead">
+        Most treatments of functions present the same representations with the same visual logic, or none at all. Each editorial piece in the examples below features alternative representations that do more instructional work.
+      </p>
+    </div>
+
+    <p class="section-label">The Problem</p>
+    <div class="writeup-section">
+      <p>
+        Standard introductions to functions present multiple representations: machine, map, arrow notation, however these diagrams are often undifferentiated.
+      </p>
+      <div class="insight-block">
+        <p>Theses representations exist as <strong>illustration</strong>. The goal here is to make them function as <strong>instruction</strong>, where every visual decision carries meaning and reduces the load on the reader.</p>
+      </div>
+      <p>
+        These design choices especially matters to learners with processing differences. When color, layout, and notation are used consistently and intentionally, the visual structure of the page does part of the cognitive work. This benefit generalizes: what reduces friction for a student with ADHD tends to improve clarity for every student.
+      </p>
+    </div>
+
+    <p class="section-label">Design Principles</p>
+    <div class="writeup-section">
+      <ul class="design-list">
+        <li><strong>Use color consistently and intentionally.</strong> Blue for input and domain. Green for output and range. Apply this across correspoinding prose, diagrams, and notation.</li>
+        <li><strong>Every representation should earn its place.</strong> If different views of the same concept are presented, each one should add something the others don't.</li>
+        <li><strong>Reduce cognitive load at first contact.</strong> Titles, labels, and captions should orient the reader before asking them to process content.</li>
+      </ul>
+    </div>
+
+
+
+    <!-- Example 1 -->
+    <p class="section-label">Example 1 of 3</p>
+    <div class="example-section">
+      <h2 class="example-heading">Visual Representation: The Machine Diagram</h2>
+      <div class="writeup-section">
+        <p>
+          The Wikimedia diagram shown below is a standard textbook and instructional treatment of a function that features a machine labeled as a function, f, alongside a labeled input and output. 
+        </p>
+        <p>
+          The revised diagram illustrates the machine representation and applies consistent color encoding: blue for domain and input, green for range and output. Each input is a blue ball dropping into the machine; each output is a green ball rolling out. This visual tells the same story as the Wikimedia diagram and adds information about the domiain and range with a stronger visual cue system.
+        </p>
+      </div>
+      <div class="slideshow-wrap" id="slider1">
+        <div class="slide-stage">
+          <img class="slide-img active" src="slides/wikimedia_function_machine.png" alt="Wikimedia: function machine diagram" />
+          <img class="slide-img" src="slides/cm_function_machine.webp" alt="Revised machine diagram with color-coded input and output" />
+        </div>
+        <div class="slide-controls">
+          <button class="slide-btn" data-slider="1" data-dir="-1" disabled>← Prev</button>
+          <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+            <span class="slide-counter" id="counter1">1 / 2</span>
+            <div class="slide-dots" id="dots1"></div>
+          </div>
+          <button class="slide-btn" data-slider="1" data-dir="1">Next →</button>
+        </div>
+      </div>
+      <p class="slide-caption">Source (slide 1): Wvbailey, Public domain, via Wikimedia Commons</p>
+    </div>
+
+
+<!-- Example 2 -->
+<p class="section-label">Example 2 of 3</p>
+<div class="example-section">
+  <h2 class="example-heading">Visual Representation: The Map Diagram</h2>
+  <div class="writeup-section">
+    <p>
+      The Wikimedia diagram shown below is a standard representation of a function as a mapping between sets. It shows elements of a domain set mapped to elements of a range set, with arrows indicating the correspondence.
+    </p>
+    <p>
+      The revised diagram applies the same color encoding used throughout this portfolio piece: blue for the domain and its elements, green for the range and its elements. This representation emphasizes that a function maps each element from the domain to exactly one element in the range. Subsequent treatments of relations versus functions, surjectivity, and injectivity should also follow these conventions for consistency across examples. 
+
+    </p>
+  </div>
+  <div class="slideshow-wrap" id="slider2">
+    <div class="slide-stage">
+      <img class="slide-img active" src="slides/wikimedia_function_map.png" alt="Wikimedia: function map diagram" />
+      <img class="slide-img" src="slides/cm_function_map.webp" alt="Revised map diagram with color-coded domain and range" />
+    </div>
+    <div class="slide-controls">
+      <button class="slide-btn" data-slider="2" data-dir="-1" disabled>← Prev</button>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+        <span class="slide-counter" id="counter2">1 / 2</span>
+        <div class="slide-dots" id="dots2"></div>
+      </div>
+      <button class="slide-btn" data-slider="2" data-dir="1">Next →</button>
+    </div>
+  </div>
+  <p class="slide-caption">Source (slide 1): Musical Inquisit, CC BY-SA 4.0, via Wikimedia Commons</p>
+</div>
+
+
+<!-- Example 3 -->
+<p class="section-label">Example 3 of 3</p>
+<div class="example-section">
+  <h2 class="example-heading">"Visual Representation: Function Composition"</h2>
+  <div class="writeup-section">
+    <p>
+      The Wikimedia diagram shown below relies on machine diagrams that are labeled with the intermediate computed values to demonstrate how to compute a composed function. The machine metaphor is present but not doing instructional work.
+    </p>
+    <p>
+      The revised diagram replaces the machine with a horizontal arrow notation that mirrors how mathematicians actually write composition. Most critically, the intermediate value must be shown as simultaneously the output of f and input to g. This is conveyed by a dashed diagonal connector that makes the handoff visible. The diagram appears twice: once in general form with variables and once with concrete values computed step by step. This preserves structure and reliable conveys the different levels of abstraction.
+    </p>
+    <div class="insight-block">
+      <p>The goal of these revised diagrams is not simply a prettier diagram. It is a diagram where <strong>the visual structure does the same work as the mathematical structure</strong>. This allows a student to see the composition happening, not just read the corresponding mathematical notation.</p>
+    </div>
+  </div>
+  <div class="slideshow-wrap" id="slider3">
+    <div class="slide-stage">
+      <img class="slide-img active" src="slides/wikimedia_function_composition.png" alt="Wikimedia composition of functions machine diagram" />
+      <img class="slide-img" src="slides/cm_function_composition" alt="Revised composition diagram with arrow notation" />
+    </div>
+    <div class="slide-controls">
+      <button class="slide-btn" data-slider="3" data-dir="-1" disabled>← Prev</button>
+      <div style="display:flex; flex-direction:column; align-items:center; gap:0.5rem;">
+        <span class="slide-counter" id="counter3">1 / 2</span>
+        <div class="slide-dots" id="dots3"></div>
+      </div>
+      <button class="slide-btn" data-slider="3" data-dir="1">Next →</button>
+    </div>
+  </div>
+  <p class="slide-caption">Source (slide 1): Wvbailey, Public domain, via Wikimedia Commons</p>
+</div>
+
+  </main>
+
+  <footer class="footer">© 2026 Carina Mata</footer>
+
+  <script>
+    const sliders = {};
+
+    function initSlider(id) {
+      const wrap = document.getElementById('slider' + id);
+      if (!wrap) return;
+      const imgs = wrap.querySelectorAll('.slide-img');
+      const total = imgs.length;
+      const counter = document.getElementById('counter' + id);
+      const dotsEl = document.getElementById('dots' + id);
+      let current = 0;
+
+      imgs.forEach((_, i) => {
+        const dot = document.createElement('div');
+        dot.className = 'dot' + (i === 0 ? ' active' : '');
+        dot.onclick = () => goTo(i);
+        dotsEl.appendChild(dot);
+      });
+
+      function goTo(n) {
+        imgs[current].classList.remove('active');
+        dotsEl.children[current].classList.remove('active');
+        current = n;
+        imgs[current].classList.add('active');
+        dotsEl.children[current].classList.add('active');
+        counter.textContent = (current + 1) + ' / ' + total;
+        wrap.querySelectorAll('.slide-btn').forEach(btn => {
+          const dir = parseInt(btn.dataset.dir);
+          btn.disabled = (dir === -1 && current === 0) || (dir === 1 && current === total - 1);
+        });
+      }
+
+      wrap.querySelectorAll('.slide-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const next = current + parseInt(btn.dataset.dir);
+          if (next >= 0 && next < total) goTo(next);
+        });
+      });
+
+      sliders[id] = { goTo, total, getCurrent: () => current };
+    }
+
+    [1, 2, 3].forEach(initSlider);
+
+    document.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      const dir = e.key === 'ArrowRight' ? 1 : -1;
+      let bestId = 1, bestVisible = 0;
+      [1, 2, 3].forEach(id => {
+        const el = document.getElementById('slider' + id);
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const visible = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+        if (visible > bestVisible) { bestVisible = visible; bestId = id; }
+      });
+      const s = sliders[bestId];
+      const next = s.getCurrent() + dir;
+      if (next >= 0 && next < s.total) s.goTo(next);
+    });
+  </script>
+
+</body>
+</html>
