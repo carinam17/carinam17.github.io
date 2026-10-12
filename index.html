@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
 
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -27,6 +28,7 @@
       --serif:      'DM Serif Display', Georgia, serif;
       --sans:       'DM Sans', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     }
+
 
     html { font-size: 16px; scroll-behavior: smooth; }
     body {
@@ -325,12 +327,21 @@
 
     .section-label.first { margin-top: 0; }
 
+
+    .section-label.on-light{border-bottom: 2px solid var(--teal-dark); }
+
+
+
+
     .section-label.on-dark {
       color: rgba(255, 255, 255, 0.95);
       border-bottom-color: rgba(255, 255, 255, 0.3);
     }
 
-
+    .section-label.on-light {
+      color: var(--teal-dark);
+      border-bottom-color: rgba(255, 255, 255, 0.3);
+    }
 
     /* ── FEATURED WORK ── */
     .feature-grid {
@@ -737,7 +748,7 @@
         <p class="hero-eyebrow">Instructional Design · Math Education</p>
         <h1>Learning experiences<br><em>built around the learner.</em></h1>
         <p class="hero-sub">
-        I start with who's learning, then build everything else.
+        I start with who's learning, define their goals, then build everything else.
         </p>
 
         <div class="hero-tags" aria-label="Focus areas">
@@ -833,7 +844,7 @@
         </article>
       </div>
       </div>
-      <p class="section-label on-dark">How I design</p>
+      <p class="section-label on-light">How I design</p>
       
       <div class="principles">
         <p><strong>Start with the learner's next reliable move.</strong> In technical subjects, early momentum matters.</p>
@@ -913,7 +924,7 @@
         <h3>Math Foundations for Nursing: Textbook & Interactive Practice</h3>
         <p>
           The biggest barrier in dosage calculation instruction isn't comprehension, it's 
-          closing the gap between reading a worked example and writing anything down. This resource 
+          closing the gap between reading a clinical scenario and writing something down. This resource 
           addresses that directly: an online textbook organized by question type paired with 
           an interactive dimensional analysis tool where students build conversion chains 
           by dragging and dropping number and unit cards before committing to paper and pencil.
