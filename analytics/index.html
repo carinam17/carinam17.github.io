@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Carina Mata · Business Intelligence &amp; Analytics</title>
+<meta name="description" content="SQL-driven BI and analytics, built so people actually use it. Dashboards, data models and stakeholder training by Carina Mata.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Carina Mata · Business Intelligence &amp; Analytics">
+<meta property="og:description" content="SQL-driven BI and analytics, built so people actually use it.">
+<meta property="og:url" content="https://www.carinamc.com/analytics/">
+<meta property="og:image" content="https://www.carinamc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=JetBrains+Mono:wght@400;500&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body class="track-analytics">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../index.html">Carina Mata</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../analytics/index.html" aria-current="page">analytics</a>
+      <a href="../design/index.html">design</a>
+      <a href="../background/index.html">background</a>
+      <a class="btn-resume" href="../resumes/carina-mata-analytics.pdf">resume.pdf ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="hero">
+    <span class="label">track 01 — business intelligence &amp; analytics</span>
+    <h1>SQL-driven BI and analytics, built so people <span class="hl">actually use it.</span></h1>
+    <p class="lede">I'm a data analyst with a background in teaching. I write the queries, build the dashboards, and make sure the people who need them understand what they're looking at.</p>
+    <div class="actions">
+      <a class="btn primary" href="../resumes/carina-mata-analytics.pdf">Download resume (PDF)</a>
+      <a class="btn" href="mailto:carinamata17@gmail.com">Email me</a>
+    </div>
+  </section>
+
+  <section aria-label="At a glance">
+    <div class="paper glance">
+      <div><span class="k">experience</span><span class="v">Decision science analyst at H-E-B, plus pricing tools for telehealth licensing at Medspoke</span></div>
+      <div><span class="k">tools</span><span class="v">SQL · Python · R · Databricks · Tableau · Excel · Power BI</span></div>
+      <div><span class="k">live project</span><span class="v">License cost estimator, checked against its Python source across 3,264 scenarios</span></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="how">
+    <div class="section-head"><h2 id="how" class="label">how I work</h2></div>
+    <ol class="steps">
+      <li>
+        <span class="tag">step 1</span>
+        <h3>Pain points first, then solutions.</h3>
+        <p>Before building anything, I find out what decision someone is struggling to make and what's in the way. The dashboard comes last.</p>
+      </li>
+      <li>
+        <span class="tag">step 2</span>
+        <h3>Define the metric before the visual.</h3>
+        <p>If "active customer" means three things across three reports, no chart fixes that. Clear definitions come first.</p>
+      </li>
+      <li>
+        <span class="tag">step 3</span>
+        <h3>Build for the person using it.</h3>
+        <p>A report nobody understands isn't finished. I document, train, and revise based on how people actually use what I build.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="work">
+    <div class="section-head"><h2 id="work" class="label">selected work</h2></div>
+
+    <article class="paper raised project">
+      <figure>
+        <div class="shot"><img src="../assets/estimator-comparison.png" alt="Bar chart ranking states by estimated first-license cost, from Pennsylvania at $518 upward, with Compact states labeled IMLC" style="object-position: top"></div>
+        <figcaption>Fig. 1 — first-license cost for all 50 states and DC</figcaption>
+      </figure>
+      <div class="body">
+        <p class="meta">python · javascript — status: live</p>
+        <h3>Medical license cost estimator</h3>
+        <p><strong>The question:</strong> what will it cost a telehealth physician to get licensed in a new state, and where should they apply first? I built the original pricing tools at Medspoke, a telehealth licensing company; this is that logic rebuilt as an interactive estimator and 51-state comparison.</p>
+        <a class="more" href="licensing-costs/index.html">Try the estimator →</a>
+      </div>
+    </article>
+
+    <!-- HIDDEN UNTIL BUILT: remove these comment markers to show the no-show and ask-the-data projects again.
+    <article class="paper raised project">
+      <figure>
+        <div class="shot">[dashboard screenshot]</div>
+        <figcaption>Fig. 2 — no-show rate by booking lead time</figcaption>
+      </figure>
+      <div class="body">
+        <p class="meta">power_bi · dax · sql — status: in progress</p>
+        <h3>Appointment no-shows</h3>
+        <p><strong>The question:</strong> which appointments are most likely to be missed, and do reminders actually help? A data model and measures built on 110k real appointment records.</p>
+        <a class="more" href="#">Read the case study →</a>
+      </div>
+    </article>
+
+    <article class="paper raised project">
+      <figure>
+        <div class="shot">[assistant screenshot]</div>
+        <figcaption>Fig. 3 — a plain-language question, the SQL it ran, the answer</figcaption>
+      </figure>
+      <div class="body">
+        <p class="meta">sql · python · llm — status: planned</p>
+        <h3>Ask-the-data assistant</h3>
+        <p><strong>The question:</strong> can someone without SQL get a number they can trust? Plain-language questions answered through a layer of defined metrics, with checks that flag ambiguous or wrong answers.</p>
+        <a class="more" href="#">Read the case study →</a>
+      </div>
+    </article>
+    -->
+
+    <div class="grid">
+      <article class="paper mini">
+        <p class="meta">case study · anonymized</p>
+        <h3>Customer analytics at a grocery chain</h3>
+        <p>Promotion ROI, top performers, and year-over-year customer behavior: who lapsed, who returned, and whether they spent more or less.</p>
+        <a class="more" href="grocery-customers/index.html">Read the case study →</a>
+      </article>
+      <article class="paper mini">
+        <p class="meta">tableau · teaching</p>
+        <h3>Dashboards that teach</h3>
+        <p>Example projects and Tableau dashboards I built as an instructor at Codeup, each designed around one analytical idea instead of a random dataset.</p>
+      </article>
+      <article class="paper mini">
+        <p class="meta">data literacy · enablement</p>
+        <h3>Intro to Data: shared vocabulary</h3>
+        <p>A lesson for adults entering data training with no technical background. The same skill as onboarding stakeholders to a new dashboard.</p>
+        <a class="more" href="https://www.carinamc.com/work/understanding-data/">View lesson →</a>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="talk">
+    <div class="closing">
+      <div>
+        <span class="label">next step</span>
+        <h2 id="talk">Let's talk about your data.</h2>
+        <p>Open to BI developer, BI analyst and data analyst roles, remote or in San Antonio.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="../resumes/carina-mata-analytics.pdf">Download resume (PDF)</a>
+        <a class="btn ghost" href="mailto:carinamata17@gmail.com">carinamata17@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Carina Mata · I also teach math at <a href="https://convergentmath.com">Convergent Math</a></span>
+    <a href="../background/index.html">full background →</a>
+  </div>
+</footer>
+</body>
+</html>

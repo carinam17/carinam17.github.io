@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Grocery Customer Analytics · Carina Mata</title>
+<meta name="description" content="Case study: promotion ROI, top performers, and year-over-year customer behavior for a regional grocery chain.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Customer analytics at a grocery chain">
+<meta property="og:description" content="Promotion ROI, top performers, and year-over-year customer behavior. A case study by Carina Mata.">
+<meta property="og:url" content="https://www.carinamc.com/analytics/grocery-customers/">
+<meta property="og:image" content="https://www.carinamc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=JetBrains+Mono:wght@400;500&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  .crumb { font-family: var(--mono); font-size: 0.82rem; }
+  .crumb a { text-decoration: none; color: var(--accent); }
+  .prose { display: flex; flex-direction: column; gap: 0.9rem; color: var(--body); max-width: 44rem; }
+  .prose ul { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.55rem; }
+  .segments { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 0.25rem; }
+  .segments span { font-family: var(--mono); font-size: 0.8rem; border: 1.5px solid var(--ink); background: var(--paper); padding: 0.3rem 0.65rem; }
+  .confidential { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+</style>
+</head>
+<body class="track-analytics">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Carina Mata</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../../analytics/index.html" aria-current="page">analytics</a>
+      <a href="../../design/index.html">design</a>
+      <a href="../../background/index.html">background</a>
+      <a class="btn-resume" href="../../resumes/carina-mata-analytics.pdf">resume.pdf ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="hero">
+    <p class="crumb"><a href="../../analytics/index.html">← analytics</a></p>
+    <span class="label">case study · retail customer analytics</span>
+    <h1>Customer analytics at a <span class="hl">grocery chain.</span></h1>
+    <p class="lede">Which promotions paid for themselves, and how did customers change from one year to the next? Two questions I answered as an analyst on a decision science team.</p>
+    <p class="confidential">Details are generalized to protect employer confidentiality.</p>
+  </section>
+
+  <section aria-labelledby="context">
+    <div class="paper">
+      <div class="prose">
+        <h2 id="context" class="label">context</h2>
+        <p>I was an analyst on the decision science team at a regional grocery chain. I worked with customer and transaction data prepared by our data engineering team, and turned it into analysis and reporting for business stakeholders.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="questions">
+    <div class="section-head"><h2 id="questions" class="label">what the business needed to know</h2></div>
+    <div class="grid">
+      <article class="paper raised mini">
+        <p class="meta">question 1</p>
+        <h3>What's performing, and does promotion spend pay off?</h3>
+        <p>Which products, stores, and promotions performed best, and whether promotional spend returned more than it cost.</p>
+      </article>
+      <article class="paper raised mini">
+        <p class="meta">question 2</p>
+        <h3>How are customers changing year over year?</h3>
+        <p>Who lapsed, who came back, and whether returning customers were spending more or less than the year before.</p>
+        <div class="segments" aria-label="Customer segments">
+          <span>lapsed</span><span>returning · spend up</span><span>returning · spend down</span><span>new</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="did">
+    <div class="section-head"><h2 id="did" class="label">what I did</h2></div>
+    <ol class="steps">
+      <li>
+        <span class="tag">step 1</span>
+        <h3>Defined the segments.</h3>
+        <p>Wrote SQL to classify every customer by year-over-year behavior. Each customer was compared against the same window a year earlier, so "lapsed" and "returning" always meant the same thing in every report.</p>
+      </li>
+      <li>
+        <span class="tag">step 2</span>
+        <h3>Measured promotions against a baseline.</h3>
+        <p>Compared results during promotions with expected performance without them to estimate the return on promotional spend.</p>
+      </li>
+      <li>
+        <span class="tag">step 3</span>
+        <h3>Put it in front of decision-makers.</h3>
+        <p>Built dashboards and presented findings to business stakeholders, framed around the decisions each of them owned.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="result">
+    <div class="grid">
+      <div class="paper">
+        <h2 id="result" class="label">outcome</h2>
+        <p style="margin-top:0.85rem; color: var(--body)">Business development managers got a consistent weekly view of customer and promotion KPIs to support their merchandising decisions.</p>
+      </div>
+      <div class="paper">
+        <h2 class="label">tools</h2>
+        <p class="chips" style="margin-top:0.85rem">SQL · PySpark · Python · Databricks · Tableau</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="talk">
+    <div class="closing">
+      <div>
+        <span class="label">next step</span>
+        <h2 id="talk">Let's talk about your data.</h2>
+        <p>Open to BI developer, BI analyst and data analyst roles.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="../../resumes/carina-mata-analytics.pdf">Download resume (PDF)</a>
+        <a class="btn ghost" href="mailto:carinamata17@gmail.com">carinamata17@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Carina Mata · I also teach math at <a href="https://convergentmath.com">Convergent Math</a></span>
+    <a href="../../analytics/index.html">← back to analytics</a>
+  </div>
+</footer>
+</body>
+</html>

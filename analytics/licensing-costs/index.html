@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Medical License Cost Estimator · Carina Mata</title>
+<meta name="description" content="Estimate what a physician pays to get licensed in any US state, and compare all 50 states plus DC. A Python pricing tool rebuilt for the web.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Medical License Cost Estimator">
+<meta property="og:description" content="What does a medical license cost, state by state? An interactive estimator and 51-state comparison.">
+<meta property="og:url" content="https://www.carinamc.com/analytics/licensing-costs/">
+<meta property="og:image" content="https://www.carinamc.com/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=JetBrains+Mono:wght@400;500&family=Karla:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="../../assets/site.css">
+<style>
+  /* Page-specific pieces; colors come from site.css tokens */
+  .crumb { font-family: var(--mono); font-size: 0.82rem; }
+  .crumb a { text-decoration: none; color: var(--accent); }
+  .note { font-family: var(--mono); font-size: 0.8rem; color: var(--muted); }
+
+  .estimator { display: flex; flex-wrap: wrap; gap: 1.75rem; align-items: flex-start; }
+  .estimator > form { flex: 1 1 20rem; min-width: 0; display: flex; flex-direction: column; gap: 1.4rem; }
+  .estimator > .result { flex: 1.3 1 22rem; min-width: 0; }
+
+  fieldset { border: 0; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+  legend, .field-label { font-family: var(--mono); font-size: 0.8rem; color: var(--accent); margin-bottom: 0.4rem; padding: 0; }
+  .seg { display: inline-flex; border: 1.5px solid var(--ink); width: max-content; }
+  .seg label { padding: 0.55rem 1.1rem; cursor: pointer; font-weight: 700; }
+  .seg input { position: absolute; opacity: 0; pointer-events: none; }
+  .seg label:has(input:checked) { background: var(--ink); color: var(--paper); }
+  .seg label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .check { display: flex; gap: 0.65rem; align-items: flex-start; cursor: pointer; }
+  .check input { width: 1.15rem; height: 1.15rem; margin-top: 0.25rem; accent-color: var(--accent); flex: none; }
+  .check small { display: block; color: var(--muted); font-size: 0.88rem; line-height: 1.45; }
+  select {
+    font: inherit; font-size: 1rem; color: var(--ink); background: var(--paper);
+    border: 1.5px solid var(--ink); padding: 0.6rem 0.75rem; border-radius: 0; min-height: 2.75rem; max-width: 100%;
+  }
+  .add-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .add-row select { flex: 1 1 12rem; min-width: 0; }
+  .btn-small { font: inherit; font-weight: 700; padding: 0.55rem 1rem; border: 1.5px solid var(--ink); background: var(--paper); color: var(--ink); cursor: pointer; min-height: 2.75rem; }
+  .btn-small:hover { background: var(--ink); color: var(--paper); }
+  .chiplist { display: flex; flex-wrap: wrap; gap: 0.4rem; list-style: none; margin: 0; padding: 0; }
+  .chiplist li { display: inline-flex; align-items: center; gap: 0.25rem; border: 1.5px solid var(--ink); background: var(--paper); font-family: var(--mono); font-size: 0.8rem; padding-left: 0.6rem; }
+  .chiplist button { font: inherit; border: 0; background: transparent; cursor: pointer; padding: 0.4rem 0.55rem; color: var(--muted); }
+  .chiplist button:hover { color: var(--ink); }
+  .empty { color: var(--muted); font-size: 0.95rem; }
+
+  .total { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0.5rem 1rem; padding-bottom: 1.1rem; border-bottom: 1.5px solid var(--ink); }
+  .total .big { font-family: var(--display); font-size: clamp(2.4rem, 5vw, 3.2rem); line-height: 1; font-variant-numeric: tabular-nums; }
+  .total .where { font-weight: 700; }
+  .path { margin-top: 0.75rem; color: var(--body); font-size: 0.98rem; }
+  .breakdown { margin-top: 1rem; }
+  .breakdown h3 { font-family: var(--mono); font-size: 0.78rem; font-weight: 500; color: var(--accent); margin: 1rem 0 0.25rem; display: flex; justify-content: space-between; }
+  .breakdown dl { margin: 0; }
+  .breakdown .row { display: flex; justify-content: space-between; gap: 1rem; padding-block: 0.35rem; border-bottom: 1px dashed var(--rule); }
+  .breakdown dd { margin: 0; font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .breakdown dt { min-width: 0; }
+  .renewal { margin-top: 1.4rem; background: var(--highlight); padding: 1rem 1.15rem; display: flex; flex-wrap: wrap; gap: 0.25rem 1.5rem; justify-content: space-between; }
+  .renewal strong { font-variant-numeric: tabular-nums; }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: center; margin-bottom: 1.25rem; }
+  .controls .seg label { font-size: 0.9rem; padding: 0.45rem 0.9rem; }
+  .chart { position: relative; }
+  .chart-head, .bar-row { display: grid; grid-template-columns: minmax(7.5rem, 11rem) minmax(0, 1fr) 5.5rem; gap: 0.75rem; align-items: center; }
+  .chart-head { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); padding-bottom: 0.4rem; border-bottom: 1px solid var(--rule); }
+  .chart-head span:last-child, .bar-row .val { text-align: right; }
+  .bars { list-style: none; margin: 0; padding: 0; }
+  .bar-row {
+    width: 100%; font: inherit; color: var(--ink); background: transparent; border: 0; text-align: left;
+    padding: 2px 0; min-height: 2rem; cursor: pointer;
+  }
+  .bar-row:hover, .bar-row:focus-visible { background: rgba(31, 58, 147, 0.06); }
+  .bar-row.selected { background: var(--highlight); }
+  .bar-row .name { font-size: 0.95rem; display: flex; gap: 0.4rem; align-items: center; min-width: 0; }
+  .bar-row .name span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .badge { font-family: var(--mono); font-size: 0.66rem; border: 1px solid var(--ink); padding: 0 0.3rem; line-height: 1.5; flex: none; }
+  .track { height: 0.9rem; position: relative; }
+  .fill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--accent); border-radius: 0 4px 4px 0; }
+  .val { font-variant-numeric: tabular-nums; font-size: 0.92rem; }
+  .tip {
+    position: absolute; z-index: 5; pointer-events: none; background: var(--ink); color: var(--paper);
+    padding: 0.6rem 0.8rem; font-size: 0.88rem; line-height: 1.45; max-width: 16rem; box-shadow: 4px 4px 0 var(--accent);
+  }
+  .tip b { font-family: var(--display); font-weight: 600; font-size: 1rem; }
+  .more-row { margin-top: 1rem; }
+
+  .fixes { margin: 0; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.6rem; color: var(--body); }
+  .fixes strong { color: var(--ink); }
+  code { font-family: var(--mono); font-size: 0.88em; background: var(--placeholder); padding: 0.05rem 0.3rem; }
+
+  @media (max-width: 640px) {
+    .chart-head, .bar-row { grid-template-columns: 6.5rem minmax(0, 1fr) 4.75rem; gap: 0.5rem; }
+    .bar-row .name { font-size: 0.85rem; }
+  }
+</style>
+</head>
+<body class="track-analytics">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="../../index.html">Carina Mata</a>
+    <nav class="nav" aria-label="Main">
+      <a href="../../analytics/index.html" aria-current="page">analytics</a>
+      <a href="../../design/index.html">design</a>
+      <a href="../../background/index.html">background</a>
+      <a class="btn-resume" href="../../resumes/carina-mata-analytics.pdf">resume.pdf ↓</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+
+  <section class="hero">
+    <p class="crumb"><a href="../../analytics/index.html">← analytics</a></p>
+    <span class="label">case study · telehealth licensing</span>
+    <h1>What does a medical license <span class="hl">cost, state by state?</span></h1>
+    <p class="lede">Telehealth physicians need a license in every state where their patients are. At Medspoke, a telehealth licensing company, I built a Python tool that estimated what each new license would cost and helped decide where a doctor should apply first. This is that tool, rebuilt for the web.</p>
+    <p class="note" id="as-of">Fee data from 2019–2020, when the original tool was built. Illustrative only; state boards change their fees.</p>
+  </section>
+
+  <section aria-labelledby="est-h">
+    <div class="section-head"><h2 id="est-h" class="label">estimate one license</h2></div>
+    <div class="estimator">
+      <form class="paper" id="est-form" novalidate>
+        <div>
+          <label class="field-label" for="state">state you're applying to</label>
+          <select id="state" name="state"></select>
+        </div>
+
+        <fieldset>
+          <legend>degree</legend>
+          <div class="seg">
+            <label><input type="radio" id="deg-md" name="degree" value="MD" checked> MD</label>
+            <label><input type="radio" id="deg-do" name="degree" value="DO"> DO</label>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>your situation</legend>
+          <label class="check"><input type="checkbox" id="us-ed" checked> <span>Went to medical school in the US</span></label>
+          <label class="check"><input type="checkbox" id="fsmb"> <span>Already have an FSMB profile<small>The Federation of State Medical Boards keeps a verified record of your credentials.</small></span></label>
+          <label class="check"><input type="checkbox" id="compact"> <span>Eligible for the Interstate Medical Licensure Compact<small>You hold a clean license in a Compact state and live, practice, work or file taxes there.</small></span></label>
+        </fieldset>
+
+        <fieldset>
+          <legend>licenses you hold or have held</legend>
+          <div class="add-row">
+            <label class="sr" for="prior-add" style="position:absolute;left:-999px">Add a state</label>
+            <select id="prior-add"></select>
+            <button type="button" class="btn-small" id="prior-btn">Add</button>
+          </div>
+          <ul class="chiplist" id="prior-list" aria-live="polite"></ul>
+          <p class="empty" id="prior-empty">None yet. Each one needs a verification fee.</p>
+        </fieldset>
+      </form>
+
+      <div class="paper raised result" aria-live="polite">
+        <div class="total">
+          <span class="where" id="r-where">Texas</span>
+          <span class="big" id="r-total">$0</span>
+        </div>
+        <p class="path" id="r-path"></p>
+        <div class="breakdown" id="r-lines"></div>
+        <div class="renewal" id="r-renewal"></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="cmp-h">
+    <div class="section-head">
+      <h2 id="cmp-h" class="label">compare every state</h2>
+      <p class="lede" style="margin-top:0.75rem; font-size:1.05rem">Same physician as above, applying through the standard route with no earlier licenses. Click a state to load it into the estimator.</p>
+    </div>
+    <div class="paper">
+      <div class="controls">
+        <fieldset>
+          <legend>rank by</legend>
+          <div class="seg">
+            <label><input type="radio" name="rank" id="rank-first" value="first" checked> First license</label>
+            <label><input type="radio" name="rank" id="rank-renew" value="renew"> Renewal per year</label>
+          </div>
+        </fieldset>
+        <label class="check" style="align-self:flex-end"><input type="checkbox" id="only-compact"> <span>Compact states only</span></label>
+      </div>
+      <div class="chart" id="chart">
+        <div class="chart-head" aria-hidden="true"><span>State</span><span id="axis-label">Estimated first-license cost</span><span>Cost</span></div>
+        <ul class="bars" id="bars"></ul>
+        <div class="tip" id="tip" hidden></div>
+      </div>
+      <div class="more-row"><button type="button" class="btn-small" id="show-all">Show all states</button></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="how-h">
+    <div class="grid">
+      <div class="paper">
+        <h2 id="how-h" class="label">how it's built</h2>
+        <p style="margin-top:0.85rem; color:var(--body)">The fee tables and rules live in Python (<code>fees.py</code>, <code>estimate.py</code>). A build script writes them to the data file this page reads, and a check runs every state through both versions to confirm the totals match: 3,264 combinations, zero differences.</p>
+        <p style="margin-top:0.85rem"><a href="../../tools/licensing/estimate.py"><strong>Read the Python →</strong></a></p>
+      </div>
+      <div class="paper">
+        <h2 class="label">what I fixed from the original</h2>
+        <ul class="fixes" style="margin-top:0.85rem">
+          <li><strong>The total missed fees it had calculated:</strong> license registration, the Uniform Application, transcript, ECFMG and NPDB fees, and Arkansas's verification fee.</li>
+          <li><strong>Renewal cycles:</strong> New Mexico and Washington reported both a 3-year and a 2-year cycle.</li>
+          <li><strong>Data:</strong> one state's fee disagreed between two files, and one table had an unknown state code.</li>
+          <li><strong>Input:</strong> a mistyped state code crashed the script. The web version only offers valid states.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="talk">
+    <div class="closing">
+      <div>
+        <span class="label">next step</span>
+        <h2 id="talk">Let's talk about your data.</h2>
+        <p>Open to BI developer, BI analyst and data analyst roles.</p>
+      </div>
+      <div class="actions">
+        <a class="btn" href="../../resumes/carina-mata-analytics.pdf">Download resume (PDF)</a>
+        <a class="btn ghost" href="mailto:carinamata17@gmail.com">carinamata17@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 Carina Mata · I also teach math at <a href="https://convergentmath.com">Convergent Math</a></span>
+    <a href="../../analytics/index.html">← back to analytics</a>
+  </div>
+</footer>
+
+<script src="licensing-data.js"></script>
+<script src="estimator.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
